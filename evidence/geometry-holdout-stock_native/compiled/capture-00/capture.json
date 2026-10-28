@@ -1,0 +1,61 @@
+{
+  "compile_return_object_unchanged": true,
+  "cupy_returned": {
+    "bytes": 26591,
+    "elf_magic": true,
+    "sha256": "cea39c3568fda8fc613d525b6a774d45f3faaeadb2ce33ccfb0f3fd069f6f7b7"
+  },
+  "index": 0,
+  "matching_valid_cache_entries": [
+    "8d8640510d26befd6903a59731c5b84fc97078a9.cubin"
+  ],
+  "method": "cubin",
+  "nvrtc_complete": {
+    "bytes": 26592,
+    "elf_magic": true,
+    "sha256": "9f8192f54a21f303d4c23f2c295c98f187417de252dc9154f64cbecaf46e1857"
+  },
+  "nvrtc_library": {
+    "already_mapped_only": true,
+    "path": "/usr/local/cuda-12.8/targets/x86_64-linux/lib/libnvrtc.so.12.8.93",
+    "sha256": "2bb82d1a34b9fefa46aca357299aed66763d4d6613d015d5a591224c00fa7e5a",
+    "version": [
+      12,
+      8
+    ]
+  },
+  "options": [
+    "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/cub",
+    "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/thrust",
+    "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/libcudacxx",
+    "-std=c++14",
+    "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include",
+    "-I/usr/local/cuda/include",
+    "-ftz=true",
+    "-arch=sm_86",
+    "--device-as-default-execution-space"
+  ],
+  "program_name": "/tmp/tmpfokxiosv/8d8640510d26befd6903a59731c5b84fc97078a9.cubin.cu",
+  "relationship": {
+    "complete_final_byte_hex": "00",
+    "executable_sections": {
+      "all_identical": true,
+      "sections": [
+        {
+          "bytes": 23552,
+          "complete_sha256": "db436fd1a8f9cbed9fc28660b684576e8164cc9661e053a5c91d32be22e40aac",
+          "identical": true,
+          "name": ".text.ring_mine",
+          "offset": 1920,
+          "returned_sha256": "db436fd1a8f9cbed9fc28660b684576e8164cc9661e053a5c91d32be22e40aac"
+        }
+      ],
+      "target_section_present": true
+    },
+    "identical": false,
+    "returned_is_complete_minus_final_byte": true,
+    "size_difference": 1
+  },
+  "source_sha256": "91f120b47ca644aa39f662dd0f023407231e32ea8eb2928f7d1b2bdb692e4f1c",
+  "status": "ok"
+}

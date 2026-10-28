@@ -1,0 +1,1 @@
+{"status": "passed_raw_arithmetic", "comparisons": {"winner23_native_vs_stock460_numpy": {"ratio_of_mean_rates_gain_percent": 13.654793168940206, "ratio_of_total_elapsed_gain_percent": 13.654807443772787}}}

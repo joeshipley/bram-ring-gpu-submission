@@ -1,0 +1,26 @@
+{
+  "active_blocks_per_sm": 2,
+  "attributes": {
+    "binary_version": 86,
+    "cache_mode_ca": 0,
+    "const_size_bytes": 0,
+    "local_size_bytes": 0,
+    "max_dynamic_shared_size_bytes": 41980,
+    "max_threads_per_block": 768,
+    "num_regs": 40,
+    "preferred_shared_memory_carveout": -1,
+    "ptx_version": 86,
+    "shared_size_bytes": 7172
+  },
+  "capture_index": 0,
+  "epoch": "epoch0",
+  "local": 0,
+  "registers": 40,
+  "role": "stock",
+  "shared": 7172,
+  "source": "rtx3070-handoff/gpu/mine.py",
+  "source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+  "stack": 0,
+  "status": "passed_before_mining",
+  "threads": 768
+}

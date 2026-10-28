@@ -1,0 +1,38 @@
+{
+  "diagnostics": {
+    "kind": "address_variable_chunk_value_lane_u16",
+    "chunk_widths": [
+      7,
+      7,
+      6
+    ],
+    "chunk_bit_offsets": [
+      0,
+      7,
+      14
+    ],
+    "chunk_row_offsets": [
+      0,
+      128,
+      256
+    ],
+    "rows": 320,
+    "lanes": 768,
+    "prefix_bytes": 6912,
+    "prefix_sha256": "f86c5df3ba7143cef4d1a88e25099981126447243386631620b842318898c2f1",
+    "table_words": 245760,
+    "table_sha256": "e13db7352fd684bad24e4cba55f645587fea08888cea7e3177db597440f80612",
+    "epoch": "epoch0",
+    "nonce_independent": true,
+    "outside_timing": true
+  },
+  "device_total_bytes": 498432,
+  "prefix_sha256": "f86c5df3ba7143cef4d1a88e25099981126447243386631620b842318898c2f1",
+  "table_sha256": "e13db7352fd684bad24e4cba55f645587fea08888cea7e3177db597440f80612",
+  "suffix_sha256": "e13db7352fd684bad24e4cba55f645587fea08888cea7e3177db597440f80612",
+  "payload_sha256": "896558877df650ad683b3b388fc72d239971d9397b3be24ec52fb344ba0360f8",
+  "table_dtype": "uint16",
+  "prefix_equal": true,
+  "suffix_equal": true,
+  "outside_timing": true
+}

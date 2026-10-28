@@ -1,0 +1,196 @@
+{
+  "epoch": "epoch0",
+  "helper_sha256": "f1566229c878b623372e876c742b4f288d20c987297d518237660abf9ae5286f",
+  "outside_timing": true,
+  "roles": {
+    "candidate": {
+      "module_object_id": 123884317183248,
+      "source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+      "tables": {
+        "d_AB": {
+          "device_ptr": 123883445454336,
+          "dtype": "uint8",
+          "dtype_str": "|u1",
+          "nbytes": 498432,
+          "raw_file": "metadata/candidate-d_AB.bin",
+          "sha256": "896558877df650ad683b3b388fc72d239971d9397b3be24ec52fb344ba0360f8",
+          "shape": [
+            498432
+          ]
+        },
+        "d_MULA": {
+          "device_ptr": 123883445953024,
+          "dtype": "uint16",
+          "dtype_str": "<u2",
+          "nbytes": 256,
+          "raw_file": "metadata/candidate-d_MULA.bin",
+          "sha256": "50f6584a0d6aa2adeb85276eeb85451625b9fb2a9de7a49caae4fbcac4a8a357",
+          "shape": [
+            128
+          ]
+        },
+        "d_MULB": {
+          "device_ptr": 123883445953536,
+          "dtype": "uint16",
+          "dtype_str": "<u2",
+          "nbytes": 256,
+          "raw_file": "metadata/candidate-d_MULB.bin",
+          "sha256": "53e1f2186cc77f397746c22d64bdf8975d0941369015f984baf60d320986f6e1",
+          "shape": [
+            128
+          ]
+        },
+        "d_MULC": {
+          "device_ptr": 123883445954048,
+          "dtype": "uint32",
+          "dtype_str": "<u4",
+          "nbytes": 512,
+          "raw_file": "metadata/candidate-d_MULC.bin",
+          "sha256": "5652140dd9d6129f0ac7e0cc8b58bc391a49b169004ba80630692bc45b0d7cde",
+          "shape": [
+            128
+          ]
+        },
+        "d_PREV": {
+          "device_ptr": 123883445954560,
+          "dtype": "uint32",
+          "dtype_str": "<u4",
+          "nbytes": 3072,
+          "raw_file": "metadata/candidate-d_PREV.bin",
+          "sha256": "9f28920ad81eaa3e864136a103d6a110cdc21db1cd76655e8bb14d6d75077a5f",
+          "shape": [
+            768
+          ]
+        },
+        "d_RULE": {
+          "device_ptr": 123883445377536,
+          "dtype": "uint16",
+          "dtype_str": "<u2",
+          "nbytes": 30720,
+          "raw_file": "metadata/candidate-d_RULE.bin",
+          "sha256": "f33be1d598783b448c81ae4a62b25bd973b23f0dae90fdf445ca6f4761fbea87",
+          "shape": [
+            15360
+          ]
+        },
+        "d_TIDX": {
+          "device_ptr": 123883445408256,
+          "dtype": "uint16",
+          "dtype_str": "<u2",
+          "nbytes": 30720,
+          "raw_file": "metadata/candidate-d_TIDX.bin",
+          "sha256": "1ca73c8c662d745b2d8b4a658f58049d437163088896dc17658154529b24e147",
+          "shape": [
+            15360
+          ]
+        },
+        "d_TSH": {
+          "device_ptr": 123883445438976,
+          "dtype": "uint8",
+          "dtype_str": "|u1",
+          "nbytes": 15360,
+          "raw_file": "metadata/candidate-d_TSH.bin",
+          "sha256": "ab37498debdad557a18d46e96082e609a665ca28fc0c9dc57188a3e9ed695bb8",
+          "shape": [
+            15360
+          ]
+        }
+      }
+    },
+    "stock": {
+      "module_object_id": 123884317181568,
+      "source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+      "tables": {
+        "d_AB": {
+          "device_ptr": 123883445365760,
+          "dtype": "uint8",
+          "dtype_str": "|u1",
+          "nbytes": 6912,
+          "raw_file": "metadata/stock-d_AB.bin",
+          "sha256": "f86c5df3ba7143cef4d1a88e25099981126447243386631620b842318898c2f1",
+          "shape": [
+            6912
+          ]
+        },
+        "d_MULA": {
+          "device_ptr": 123883445372928,
+          "dtype": "uint16",
+          "dtype_str": "<u2",
+          "nbytes": 256,
+          "raw_file": "metadata/stock-d_MULA.bin",
+          "sha256": "50f6584a0d6aa2adeb85276eeb85451625b9fb2a9de7a49caae4fbcac4a8a357",
+          "shape": [
+            128
+          ]
+        },
+        "d_MULB": {
+          "device_ptr": 123883445373440,
+          "dtype": "uint16",
+          "dtype_str": "<u2",
+          "nbytes": 256,
+          "raw_file": "metadata/stock-d_MULB.bin",
+          "sha256": "53e1f2186cc77f397746c22d64bdf8975d0941369015f984baf60d320986f6e1",
+          "shape": [
+            128
+          ]
+        },
+        "d_MULC": {
+          "device_ptr": 123883445373952,
+          "dtype": "uint32",
+          "dtype_str": "<u4",
+          "nbytes": 512,
+          "raw_file": "metadata/stock-d_MULC.bin",
+          "sha256": "5652140dd9d6129f0ac7e0cc8b58bc391a49b169004ba80630692bc45b0d7cde",
+          "shape": [
+            128
+          ]
+        },
+        "d_PREV": {
+          "device_ptr": 123883445374464,
+          "dtype": "uint32",
+          "dtype_str": "<u4",
+          "nbytes": 3072,
+          "raw_file": "metadata/stock-d_PREV.bin",
+          "sha256": "9f28920ad81eaa3e864136a103d6a110cdc21db1cd76655e8bb14d6d75077a5f",
+          "shape": [
+            768
+          ]
+        },
+        "d_RULE": {
+          "device_ptr": 123883445288960,
+          "dtype": "uint16",
+          "dtype_str": "<u2",
+          "nbytes": 30720,
+          "raw_file": "metadata/stock-d_RULE.bin",
+          "sha256": "29306ba70f1b15af53ad86191724f40efcacb049689976addf8edfe60f06467e",
+          "shape": [
+            15360
+          ]
+        },
+        "d_TIDX": {
+          "device_ptr": 123883445319680,
+          "dtype": "uint16",
+          "dtype_str": "<u2",
+          "nbytes": 30720,
+          "raw_file": "metadata/stock-d_TIDX.bin",
+          "sha256": "4d683995f1edd152f70c5f643e72a1985904566cf5ba332bbfb8e1bc3ae547d2",
+          "shape": [
+            15360
+          ]
+        },
+        "d_TSH": {
+          "device_ptr": 123883445350400,
+          "dtype": "uint8",
+          "dtype_str": "|u1",
+          "nbytes": 15360,
+          "raw_file": "metadata/stock-d_TSH.bin",
+          "sha256": "12601438280313eb5212666abda2928402b9584b5f4bdc0ad9c4bcc0e19cee91",
+          "shape": [
+            15360
+          ]
+        }
+      }
+    }
+  },
+  "schema_version": 1
+}

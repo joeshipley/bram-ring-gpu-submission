@@ -1,0 +1,143 @@
+{
+  "benchmark": {
+    "actual_blocks_reported_per_role": true,
+    "all_per_nonce_work_including_SHA256_timed": true,
+    "default_blocks": {
+      "candidate": 460,
+      "stock": 460
+    },
+    "default_candidate_packer": "numpy",
+    "derived_timer": "package_runtime.derived_timer applies explicit blocks argument and three geometry literal replacements; inverse checked.",
+    "explicit_candidate_blocks": [
+      23,
+      460
+    ],
+    "function_invariant": "Exact UTF-8 source segment, no version-specific AST serialization.",
+    "native_packing": "Optional separate globals serializer binding; no launch monkeypatch and no kernel/source change.",
+    "optional_candidate_packer": "native",
+    "packaged_sha256": "8ea42f067c0db5876781b15b05a54aa624a44411e3fa34f45b9224fa32f03b56",
+    "preserved_function_source_sha256": {
+      "measure": "44d687d205715133550d219c15a9d7bdd2bac9050667fef555dfaac2926136c5",
+      "packed_states": "5878501aac669432003a9d5fa99d0db34c93db77c31f61a45c923c982a05c1bc",
+      "verify": "a72756d9c1278ec8aca501b251644da2582ec419b91780c3395fbacfbf5d6578"
+    },
+    "source": "round25/bench.py",
+    "source_sha256": "6ad1043cc3ba138833e90be90b840682f81c00daa7ddc3dd22c4aabbd3746069"
+  },
+  "build": {
+    "builder_sha256": "028bf50f9a700e24673cdb3d786573d32fb67bc0257c1d46ea82af6405a7ef0a",
+    "inputs_manifest_sha256": "a01272eb2a0cf42354a3b66b99563632e230bae3a7283895af83001f3382f38a",
+    "prior_package_manifest_sha256": "8cb1f462eab6aeee0dc9364ca7e01dc19ff067abc4be7185bcea3fe3386ec7a4",
+    "runtime_imports_require_historical_round_folders": false
+  },
+  "candidate": {
+    "byte_identical_to_confirmed_round33_winner": true,
+    "derived_from": "round25/cache-priority/candidates/cache_lut_last.py",
+    "derived_from_sha256": "89c0a97e78ef27b8b75b1261104d3adec5a22810273ca6950b74e8178e0610c1",
+    "file": "gpu/candidate.py",
+    "geometry_default_unchanged_in_source": true,
+    "name": "rule_u64",
+    "no_new_kernel_source_optimization_in_this_package": true,
+    "nonce_independent_epoch_setup_excluded_from_timing": true,
+    "previous_optimizations_retained": true,
+    "sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+    "source": "round33/rulewide/candidates/rule_u64.py"
+  },
+  "copied_helpers": {
+    "capture_actual.py": {
+      "byte_identical": true,
+      "sha256": "a76dec6d2eeaba8ab86d421383c7cccd7676fd469000ea210aaab9feac4e7f2c",
+      "source": "rtx3070-handoff/capture_actual.py"
+    },
+    "metadata_capture.py": {
+      "byte_identical": true,
+      "sha256": "f1566229c878b623372e876c742b4f288d20c987297d518237660abf9ae5286f",
+      "source": "round25/metadata_capture.py"
+    },
+    "requirements.txt": {
+      "byte_identical": true,
+      "sha256": "85e7fd04b2766881279102876330338e4dbec4b7562392a9fb8f7a466a3260a9",
+      "source": "rtx3070-handoff/requirements.txt"
+    }
+  },
+  "historical_evidence": null,
+  "license": "MIT; original copyright notice preserved",
+  "organizer_validation": "pending",
+  "package_GPU_validation": "pending",
+  "packing": {
+    "actual_host_build_and_proof_required": true,
+    "bundled_vectors": {
+      "packing/vectors/epoch0.txt": {
+        "sha256": "d406e2319f21e641dc77fcf79693c88062cc312cd1d75f0c286fa4ba85cf88f1",
+        "source": "rtx3070-handoff/vectors.txt"
+      },
+      "packing/vectors/round30.txt": {
+        "sha256": "1716ef39dfd72cc8e023fb6628ec6834adedfe5e65982cd61c5f5f8299ca52e8",
+        "source": "round30/holdout/vectors.txt"
+      },
+      "packing/vectors/round34.txt": {
+        "sha256": "b1734f29e280b6ae4b0e2d4c9c8dfeab31d2581a6520a99ce549ab4f64597958",
+        "source": "round34/holdout/vectors.txt"
+      }
+    },
+    "byte_identical_core_files": {
+      "adapter.py": {
+        "sha256": "37848cc534536442dc04e198e6c7fbdf20efdfd9874e9930cc223e0b82b5c579",
+        "source": "round35/packing/adapter.py"
+      },
+      "build.py": {
+        "sha256": "64c054688b1e4131791b297e66993bf63c8c097967d75fed07110bb66d2c4eae",
+        "source": "round35/packing/build.py"
+      },
+      "pack.c": {
+        "sha256": "fd9a9d84b75ceae9a1db8aedf22d901120d3f685908d444574c75b3b1ea871c9",
+        "source": "round35/packing/pack.c"
+      },
+      "sanitize.c": {
+        "sha256": "21334339d129f9689734bb6e5a925be0a3fe65aa6f34f1b4d4a70f1ce3c5eda7",
+        "source": "round35/packing/sanitize.c"
+      }
+    },
+    "cpu_proof_source": {
+      "exact_inverse": true,
+      "only_changes": [
+        "ROOT becomes package parent",
+        "three vector references become bundled paths"
+      ],
+      "origin_sha256": "a99e7c95bd67d7c48bfb0810639ce5ba4531a4c6fd15469d4992245a76250753",
+      "packaged_sha256": "4ebb8406c5abcb9e58edf8e91f7521e68bb7330c0d991602843cf09f9eeb3561",
+      "source": "round35/packing/cpu_check.py"
+    },
+    "precompiled_library_shipped": false
+  },
+  "published_or_submitted": false,
+  "runtime_imports_require_historical_round_folders": false,
+  "status": "conditional_round35_submission_preparation_only",
+  "untouched_upstream_files": {
+    "LICENSE": {
+      "sha256": "1891665e46abb61980d3a456df8a17f341f3bc913f55c34dec62b03abddc98ba",
+      "upstream_commit": "abe3f552fef39b1d7fc52327b2ca5e97134b57b3"
+    },
+    "generate.py": {
+      "sha256": "20f78b63ff10f7b4fee681355190e91eaaeb527a733d2701d928eb0ac6534dab",
+      "upstream_commit": "abe3f552fef39b1d7fc52327b2ca5e97134b57b3"
+    },
+    "gpu/mine.py": {
+      "sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+      "upstream_commit": "abe3f552fef39b1d7fc52327b2ca5e97134b57b3"
+    },
+    "host/check_vectors.py": {
+      "sha256": "7dae6059cd85feb4de5c949e6a58501a5269aa085cd78e1523c6b9b7c7a80e61",
+      "upstream_commit": "abe3f552fef39b1d7fc52327b2ca5e97134b57b3"
+    },
+    "spec.py": {
+      "sha256": "5596327c5fc89b4d87eaf64df0b25e8430a9b25247ebae4c3e1037c19cd2f292",
+      "upstream_commit": "abe3f552fef39b1d7fc52327b2ca5e97134b57b3"
+    },
+    "vectors.txt": {
+      "sha256": "d406e2319f21e641dc77fcf79693c88062cc312cd1d75f0c286fa4ba85cf88f1",
+      "upstream_commit": "abe3f552fef39b1d7fc52327b2ca5e97134b57b3"
+    }
+  },
+  "upstream_commit": "abe3f552fef39b1d7fc52327b2ca5e97134b57b3"
+}

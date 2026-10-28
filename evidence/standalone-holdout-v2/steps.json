@@ -1,0 +1,78 @@
+[
+  {
+    "BRAM_EPOCH": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+    "argv": [
+      "/root/bram35/.venv/bin/python",
+      "-B",
+      "/root/bram35-standalone-v2/bram-round35/bench.py",
+      "--pairs",
+      "20",
+      "--nonces",
+      "1840",
+      "--nonce-base",
+      "5600000",
+      "--mode",
+      "full",
+      "--candidate-blocks",
+      "23",
+      "--candidate-packer",
+      "native",
+      "--pack-build",
+      "/root/bram35-standalone-v2/bram-round35/build/native-pack",
+      "--pack-proof",
+      "/root/bram35-standalone-v2/bram-round35/build/native-pack/cpu-proof.json",
+      "--output",
+      "/root/bram35/round35/results/standalone-holdout-v2/benchmark",
+      "--vectors",
+      "/root/bram35/round35/results/standalone-holdout-v2/inputs/vectors.txt",
+      "--verify-only"
+    ],
+    "cwd": "/root/bram35-standalone-v2/bram-round35",
+    "elapsed_seconds": 11.585434198379517,
+    "exit_code": 0,
+    "log": "benchmark.log",
+    "log_sha256": "56a57efd00f5615c1ba33d0c461813e46b233b1f63fdf1a5eb8f13f9ab708c2c",
+    "name": "benchmark",
+    "pid": 8692,
+    "started_unix": 1793151461.7654572,
+    "timeout_seconds": 600
+  },
+  {
+    "BRAM_EPOCH": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+    "argv": [
+      "/root/bram35/.venv/bin/python",
+      "-B",
+      "/root/bram35-standalone-v2/bram-round35/host/check_vectors.py",
+      "/root/bram35/round35/results/standalone-holdout-v2/benchmark/baseline-vectors.txt",
+      "/root/bram35/round35/results/standalone-holdout-v2/inputs/vectors.txt"
+    ],
+    "cwd": "/root/bram35-standalone-v2/bram-round35",
+    "elapsed_seconds": 0.01572728157043457,
+    "exit_code": 0,
+    "log": "check-vectors-baseline.log",
+    "log_sha256": "36b0f00530d91a00178e156597b07f2d00df10678edac185a959d9a4a489822f",
+    "name": "check-vectors-baseline",
+    "pid": 8715,
+    "started_unix": 1793151473.3721275,
+    "timeout_seconds": 60
+  },
+  {
+    "BRAM_EPOCH": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+    "argv": [
+      "/root/bram35/.venv/bin/python",
+      "-B",
+      "/root/bram35-standalone-v2/bram-round35/host/check_vectors.py",
+      "/root/bram35/round35/results/standalone-holdout-v2/benchmark/candidate-vectors.txt",
+      "/root/bram35/round35/results/standalone-holdout-v2/inputs/vectors.txt"
+    ],
+    "cwd": "/root/bram35-standalone-v2/bram-round35",
+    "elapsed_seconds": 0.015811920166015625,
+    "exit_code": 0,
+    "log": "check-vectors-candidate.log",
+    "log_sha256": "36b0f00530d91a00178e156597b07f2d00df10678edac185a959d9a4a489822f",
+    "name": "check-vectors-candidate",
+    "pid": 8716,
+    "started_unix": 1793151473.388737,
+    "timeout_seconds": 60
+  }
+]

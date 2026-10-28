@@ -1,0 +1,29 @@
+{
+  "normal": {
+    "original_function_sha256": "1e20695e5506eca82c7d43c08a313a0949078cfc99effe07b1c1f92c0777c1de",
+    "derived_function_sha256": "2bbef5d63c3b387e0217f108b8d350a7ff685a21032295b9c257a28e7914b223",
+    "inverse_source_equal": true,
+    "changes": [
+      "explicit blocks parameter",
+      "two nblocks arguments",
+      "returned actual blocks field"
+    ],
+    "packing_changed": false,
+    "mining_launch_not_monkeypatched": true,
+    "source": "def measure(module, base, count, mode, blocks):\n    start = time.perf_counter()\n    if mode == 'fold':\n        folds = module.run(base, count, nblocks=blocks)\n        digests = []\n    else:\n        folds, states = module.run_states(base, count, nblocks=blocks)\n        if mode == 'canonical':\n            digests = [hashlib.sha256(module.spec.pack(s)).digest() for s in states]\n        else:\n            packed = packed_states(module, states)\n            digests = [hashlib.sha256(s).digest() for s in packed]\n    seconds = time.perf_counter() - start\n    # The per-nonce SHA-256s above are timed. This aggregate audit checksum is not.\n    checksum = hashlib.sha256(folds.tobytes() + b''.join(digests)).hexdigest()\n    return {'seconds': seconds, 'hashes_per_second': count / seconds,\n            'checksum': checksum, 'base': base, 'nonces': count, 'blocks': blocks}\n"
+  },
+  "native": {
+    "original_function_sha256": "1e20695e5506eca82c7d43c08a313a0949078cfc99effe07b1c1f92c0777c1de",
+    "derived_function_sha256": "2bbef5d63c3b387e0217f108b8d350a7ff685a21032295b9c257a28e7914b223",
+    "inverse_source_equal": true,
+    "changes": [
+      "explicit blocks parameter",
+      "two nblocks arguments",
+      "returned actual blocks field"
+    ],
+    "packing_changed": true,
+    "mining_launch_not_monkeypatched": true,
+    "source": "def measure(module, base, count, mode, blocks):\n    start = time.perf_counter()\n    if mode == 'fold':\n        folds = module.run(base, count, nblocks=blocks)\n        digests = []\n    else:\n        folds, states = module.run_states(base, count, nblocks=blocks)\n        if mode == 'canonical':\n            digests = [hashlib.sha256(module.spec.pack(s)).digest() for s in states]\n        else:\n            packed = packed_states(module, states)\n            digests = [hashlib.sha256(s).digest() for s in packed]\n    seconds = time.perf_counter() - start\n    # The per-nonce SHA-256s above are timed. This aggregate audit checksum is not.\n    checksum = hashlib.sha256(folds.tobytes() + b''.join(digests)).hexdigest()\n    return {'seconds': seconds, 'hashes_per_second': count / seconds,\n            'checksum': checksum, 'base': base, 'nonces': count, 'blocks': blocks}\n"
+  },
+  "frozen_bench_sha256": "6ad1043cc3ba138833e90be90b840682f81c00daa7ddc3dd22c4aabbd3746069"
+}

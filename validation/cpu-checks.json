@@ -1,0 +1,154 @@
+{
+  "status": "passed_CPU_package_checks",
+  "package": {
+    "files_verified": 33,
+    "manifest_sha256": "cb2dfe20827cee4bef576ecd7f39c6c69414e0ed3d7570a80e62677a2610ca21"
+  },
+  "official_vector_state_digest_fold_consistency_rows": 8,
+  "official_checker": "PASS: 8/8 vectors bit-exact on every column (digest, fold, state)",
+  "preserved_timing_function_source_hashes": {
+    "measure": "44d687d205715133550d219c15a9d7bdd2bac9050667fef555dfaac2926136c5",
+    "packed_states": "5878501aac669432003a9d5fa99d0db34c93db77c31f61a45c923c982a05c1bc",
+    "verify": "a72756d9c1278ec8aca501b251644da2582ec419b91780c3395fbacfbf5d6578"
+  },
+  "geometry_timer_actual_blocks_checked": [
+    [
+      193,
+      25,
+      460
+    ],
+    [
+      193,
+      25,
+      460
+    ],
+    [
+      193,
+      25,
+      23
+    ]
+  ],
+  "geometry_timer_inverse": {
+    "original_function_sha256": "1e20695e5506eca82c7d43c08a313a0949078cfc99effe07b1c1f92c0777c1de",
+    "derived_function_sha256": "2bbef5d63c3b387e0217f108b8d350a7ff685a21032295b9c257a28e7914b223",
+    "inverse_source_equal": true,
+    "changes": [
+      "explicit blocks parameter",
+      "two nblocks arguments",
+      "returned actual blocks field"
+    ],
+    "packing_changed": false,
+    "mining_launch_not_monkeypatched": true,
+    "source": "def measure(module, base, count, mode, blocks):\n    start = time.perf_counter()\n    if mode == 'fold':\n        folds = module.run(base, count, nblocks=blocks)\n        digests = []\n    else:\n        folds, states = module.run_states(base, count, nblocks=blocks)\n        if mode == 'canonical':\n            digests = [hashlib.sha256(module.spec.pack(s)).digest() for s in states]\n        else:\n            packed = packed_states(module, states)\n            digests = [hashlib.sha256(s).digest() for s in packed]\n    seconds = time.perf_counter() - start\n    # The per-nonce SHA-256s above are timed. This aggregate audit checksum is not.\n    checksum = hashlib.sha256(folds.tobytes() + b''.join(digests)).hexdigest()\n    return {'seconds': seconds, 'hashes_per_second': count / seconds,\n            'checksum': checksum, 'base': base, 'nonces': count, 'blocks': blocks}\n"
+  },
+  "judging_interface": {
+    "status": "passed_CPU_judging_interface_tests",
+    "accepted_scopes": [
+      {
+        "pairs": 5,
+        "blocks": 23,
+        "packer": "numpy",
+        "synthetic_rows": 10
+      },
+      {
+        "pairs": 5,
+        "blocks": 23,
+        "packer": "native",
+        "synthetic_rows": 10
+      },
+      {
+        "pairs": 5,
+        "blocks": 460,
+        "packer": "numpy",
+        "synthetic_rows": 10
+      },
+      {
+        "pairs": 5,
+        "blocks": 460,
+        "packer": "native",
+        "synthetic_rows": 10
+      },
+      {
+        "pairs": 20,
+        "blocks": 23,
+        "packer": "numpy",
+        "synthetic_rows": 40
+      },
+      {
+        "pairs": 20,
+        "blocks": 23,
+        "packer": "native",
+        "synthetic_rows": 40
+      },
+      {
+        "pairs": 20,
+        "blocks": 460,
+        "packer": "numpy",
+        "synthetic_rows": 40
+      },
+      {
+        "pairs": 20,
+        "blocks": 460,
+        "packer": "native",
+        "synthetic_rows": 40
+      }
+    ],
+    "rejected_controls": [
+      "missing_row_5_23_numpy",
+      "extra_row_5_23_numpy",
+      "missing_row_5_23_native",
+      "extra_row_5_23_native",
+      "missing_row_5_460_numpy",
+      "extra_row_5_460_numpy",
+      "missing_row_5_460_native",
+      "extra_row_5_460_native",
+      "wrong_order_5",
+      "wrong_checksum_5",
+      "wrong_blocks_5",
+      "wrong_packer_5",
+      "wrong_expected_pair_count_5",
+      "missing_row_20_23_numpy",
+      "extra_row_20_23_numpy",
+      "missing_row_20_23_native",
+      "extra_row_20_23_native",
+      "missing_row_20_460_numpy",
+      "extra_row_20_460_numpy",
+      "missing_row_20_460_native",
+      "extra_row_20_460_native",
+      "wrong_order_20",
+      "wrong_checksum_20",
+      "wrong_blocks_20",
+      "wrong_packer_20",
+      "wrong_expected_pair_count_20",
+      "CLI_pairs_-1",
+      "checker_pairs_-1",
+      "CLI_pairs_0",
+      "checker_pairs_0",
+      "CLI_pairs_1",
+      "checker_pairs_1",
+      "CLI_pairs_4",
+      "checker_pairs_4",
+      "CLI_pairs_6",
+      "checker_pairs_6",
+      "CLI_pairs_19",
+      "checker_pairs_19",
+      "CLI_pairs_21",
+      "checker_pairs_21",
+      "CLI_nonces_0",
+      "checker_nonces_0",
+      "CLI_nonces_1839",
+      "checker_nonces_1839",
+      "CLI_nonces_1841",
+      "checker_nonces_1841"
+    ],
+    "rejected_count": 46,
+    "defaults": {
+      "pairs": 20,
+      "nonces": 1840
+    },
+    "GPU_executed": false,
+    "scope": "Actual source orchestration and measurement-validation fragments with explicit synthetic CPU fixtures; no GPU correctness or performance claim."
+  },
+  "CUDA_candidate_executed": false,
+  "GPU_validation": "pending"
+}

@@ -1,0 +1,26 @@
+{
+  "active_blocks_per_sm": 1,
+  "attributes": {
+    "binary_version": 86,
+    "cache_mode_ca": 0,
+    "const_size_bytes": 0,
+    "local_size_bytes": 0,
+    "max_dynamic_shared_size_bytes": 41980,
+    "max_threads_per_block": 1024,
+    "num_regs": 56,
+    "preferred_shared_memory_carveout": -1,
+    "ptx_version": 86,
+    "shared_size_bytes": 7172
+  },
+  "capture_index": 1,
+  "epoch": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+  "local": 0,
+  "registers": 56,
+  "role": "candidate",
+  "shared": 7172,
+  "source": "round33/rulewide/candidates/rule_u64.py",
+  "source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+  "stack": 0,
+  "status": "passed_before_mining",
+  "threads": 768
+}

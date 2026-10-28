@@ -1,0 +1,36 @@
+{
+  "status": "submission_candidate_pending_organizer_evaluation",
+  "selected_configuration": {
+    "kernel": "gpu/candidate.py",
+    "candidate_blocks": 23,
+    "candidate_packer": "native",
+    "stock_blocks": 460,
+    "stock_packer": "numpy",
+    "nonces_per_sample": 1840,
+    "all_per_nonce_SHA": true
+  },
+  "judging_interface": {
+    "accepted_pairs": [
+      5,
+      20
+    ],
+    "default_pairs": 20,
+    "CPU_tests": "python -B tests/test_judging_interface.py",
+    "GPU_execution_of_new_CLI_revision": false
+  },
+  "historical_GPU_validation": {
+    "package": "evidence/package-v2",
+    "epoch0": "evidence/standalone-epoch0-full-v2",
+    "heldout": "evidence/standalone-holdout-v2",
+    "pairs": 20,
+    "wins": 20,
+    "mean_rate_gain_percent": 13.627261231447442,
+    "kernel_timer_and_packer_unchanged": true
+  },
+  "source_candidate_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+  "canonical_files_unchanged": true,
+  "organizer_acceptance": false,
+  "announcement_claim_posted_at_freeze": false,
+  "current_validation_records": "validation/",
+  "licence": "MIT"
+}

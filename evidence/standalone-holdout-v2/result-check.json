@@ -1,0 +1,25 @@
+{
+  "blocks": {
+    "candidate": 23,
+    "stock": 460
+  },
+  "capture_sha256": "1a15c63fbd205881055c48f7f695ff431c0b3094fab2796d09a66ef828c9b670",
+  "complete_cubin_sha256": {
+    "candidate": "96a10743673e0434043b6ceaba9feb44f9412486f3495903094c538f62e72f7d",
+    "stock": "9f8192f54a21f303d4c23f2c295c98f187417de252dc9154f64cbecaf46e1857"
+  },
+  "differential_full_state_nonces": 51,
+  "epoch": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+  "full_column_vectors_per_role": 8,
+  "metadata_sha256": "a391de6f26669c767214c24bfa5bfb946de0dc2db9fddf9ff09921b560ee3ab5",
+  "packers": {
+    "candidate": "native",
+    "stock": "numpy"
+  },
+  "scope": "Pack library/proof identity checked. Verify-only vector serialization is canonical NumPy; no native-packing performance claim.",
+  "status": "passed_standalone_holdout_verify_only_check",
+  "timed_measurements": 0,
+  "timing_claim": false,
+  "vector_roles": 2,
+  "vectors_sha256": "c7abbd8ac0286022c365b9b90882238e94550c42bca1d6e8cde3c7bbf2f9447e"
+}

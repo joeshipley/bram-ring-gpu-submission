@@ -1,0 +1,46 @@
+{
+  "status": "passed_CPU_package_checks",
+  "package": {
+    "files_verified": 27,
+    "manifest_sha256": "21bbde968f178647facc25ab31c849fe0e8e1bc56631b7f3097dc20d10683594"
+  },
+  "official_vector_state_digest_fold_consistency_rows": 8,
+  "official_checker": "PASS: 8/8 vectors bit-exact on every column (digest, fold, state)",
+  "preserved_timing_function_source_hashes": {
+    "measure": "44d687d205715133550d219c15a9d7bdd2bac9050667fef555dfaac2926136c5",
+    "packed_states": "5878501aac669432003a9d5fa99d0db34c93db77c31f61a45c923c982a05c1bc",
+    "verify": "a72756d9c1278ec8aca501b251644da2582ec419b91780c3395fbacfbf5d6578"
+  },
+  "geometry_timer_actual_blocks_checked": [
+    [
+      193,
+      25,
+      460
+    ],
+    [
+      193,
+      25,
+      460
+    ],
+    [
+      193,
+      25,
+      23
+    ]
+  ],
+  "geometry_timer_inverse": {
+    "original_function_sha256": "1e20695e5506eca82c7d43c08a313a0949078cfc99effe07b1c1f92c0777c1de",
+    "derived_function_sha256": "2bbef5d63c3b387e0217f108b8d350a7ff685a21032295b9c257a28e7914b223",
+    "inverse_source_equal": true,
+    "changes": [
+      "explicit blocks parameter",
+      "two nblocks arguments",
+      "returned actual blocks field"
+    ],
+    "packing_changed": false,
+    "mining_launch_not_monkeypatched": true,
+    "source": "def measure(module, base, count, mode, blocks):\n    start = time.perf_counter()\n    if mode == 'fold':\n        folds = module.run(base, count, nblocks=blocks)\n        digests = []\n    else:\n        folds, states = module.run_states(base, count, nblocks=blocks)\n        if mode == 'canonical':\n            digests = [hashlib.sha256(module.spec.pack(s)).digest() for s in states]\n        else:\n            packed = packed_states(module, states)\n            digests = [hashlib.sha256(s).digest() for s in packed]\n    seconds = time.perf_counter() - start\n    # The per-nonce SHA-256s above are timed. This aggregate audit checksum is not.\n    checksum = hashlib.sha256(folds.tobytes() + b''.join(digests)).hexdigest()\n    return {'seconds': seconds, 'hashes_per_second': count / seconds,\n            'checksum': checksum, 'base': base, 'nonces': count, 'blocks': blocks}\n"
+  },
+  "CUDA_candidate_executed": false,
+  "GPU_validation": "pending"
+}

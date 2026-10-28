@@ -1,0 +1,651 @@
+{
+  "status": "admitted",
+  "epoch": "epoch0",
+  "bindings": [
+    {
+      "source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+      "epoch": "epoch0",
+      "device": "NVIDIA GeForce RTX 3070",
+      "actual_source_sha256": "51db3741256f2da3c9fc7ed0adca8e48794393c277d511520d34f0ecbf9492a7",
+      "complete_cubin_sha256": "a4e8c620e27a129bc3d0ed3e5931e8577c7329a349f06ba3fd3c02e140409d24",
+      "returned_cubin_sha256": "77f1a201a56e645ad4a830ba4efb80aa544f9f1d30e00b90ec88fe7b01a49ed4",
+      "attributes": {
+        "max_threads_per_block": 768,
+        "shared_size_bytes": 7172,
+        "const_size_bytes": 0,
+        "local_size_bytes": 0,
+        "num_regs": 40,
+        "ptx_version": 86,
+        "binary_version": 86,
+        "cache_mode_ca": 0,
+        "max_dynamic_shared_size_bytes": 41980,
+        "preferred_shared_memory_carveout": -1
+      },
+      "registers": 40,
+      "stack": 0,
+      "shared": 7172,
+      "local": 0,
+      "threads": 768,
+      "active_blocks_per_sm": 2,
+      "runtime_identity": {
+        "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+        "cuda_driver": 13000,
+        "cuda_runtime": 12090,
+        "cupy": "14.2.0"
+      },
+      "launch_config": {
+        "dynamic_shared_bytes": 0,
+        "row_limit": 0,
+        "carveout_preference": -1
+      }
+    },
+    {
+      "source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+      "epoch": "epoch0",
+      "device": "NVIDIA GeForce RTX 3070",
+      "actual_source_sha256": "8c44f9931cabe9125e4ffb1a88f8732ce59cbbe84419de243200927fae45d374",
+      "complete_cubin_sha256": "96c9aa335669ac40590c22d195a9e440f791358332b9d25f551adc33a73c8ccc",
+      "returned_cubin_sha256": "24943810fd3eec93628697037b2c3a702e98639c32b47a13242c74276457be49",
+      "attributes": {
+        "max_threads_per_block": 1024,
+        "shared_size_bytes": 7172,
+        "const_size_bytes": 0,
+        "local_size_bytes": 0,
+        "num_regs": 56,
+        "ptx_version": 86,
+        "binary_version": 86,
+        "cache_mode_ca": 0,
+        "max_dynamic_shared_size_bytes": 41980,
+        "preferred_shared_memory_carveout": -1
+      },
+      "registers": 56,
+      "stack": 0,
+      "shared": 7172,
+      "local": 0,
+      "threads": 768,
+      "active_blocks_per_sm": 1,
+      "runtime_identity": {
+        "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+        "cuda_driver": 13000,
+        "cuda_runtime": 12090,
+        "cupy": "14.2.0"
+      },
+      "launch_config": {
+        "dynamic_shared_bytes": 0,
+        "row_limit": 0,
+        "carveout_preference": -1
+      }
+    }
+  ],
+  "validations": [
+    {
+      "binding": {
+        "source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+        "epoch": "epoch0",
+        "device": "NVIDIA GeForce RTX 3070",
+        "actual_source_sha256": "51db3741256f2da3c9fc7ed0adca8e48794393c277d511520d34f0ecbf9492a7",
+        "complete_cubin_sha256": "a4e8c620e27a129bc3d0ed3e5931e8577c7329a349f06ba3fd3c02e140409d24",
+        "returned_cubin_sha256": "77f1a201a56e645ad4a830ba4efb80aa544f9f1d30e00b90ec88fe7b01a49ed4",
+        "attributes": {
+          "max_threads_per_block": 768,
+          "shared_size_bytes": 7172,
+          "const_size_bytes": 0,
+          "local_size_bytes": 0,
+          "num_regs": 40,
+          "ptx_version": 86,
+          "binary_version": 86,
+          "cache_mode_ca": 0,
+          "max_dynamic_shared_size_bytes": 41980,
+          "preferred_shared_memory_carveout": -1
+        },
+        "registers": 40,
+        "stack": 0,
+        "shared": 7172,
+        "local": 0,
+        "threads": 768,
+        "active_blocks_per_sm": 2,
+        "runtime_identity": {
+          "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+          "cuda_driver": 13000,
+          "cuda_runtime": 12090,
+          "cupy": "14.2.0"
+        },
+        "launch_config": {
+          "dynamic_shared_bytes": 0,
+          "row_limit": 0,
+          "carveout_preference": -1
+        }
+      },
+      "files": {
+        "round35/results/validate-epoch0-stock/validation.json": "2674a9be003f92a982204004a4679502e5d09b7b641351e66d3d700b8a03b3f8",
+        "round35/results/validate-epoch0-stock/completion.json": "f86f7757eb1964fbb538fd9b3ecb4666b1827ccd8fb54a94ca80421f2135d2e7",
+        "round35/results/memcheck-epoch0-stock/completion.json": "686761d6cdae108a82285e3ee30ac805f6583ea49eccaf09a8f6a1f9e074aa6e",
+        "round35/results/memcheck-epoch0-stock/sanitizer-check.json": "2a11ad796946e9e337fee59f2b1af9042f9fc6017de132844b24ce4f426ad39a",
+        "round35/results/controller-baseline-validation/memcheck-epoch0-stock.log": "59ba9f9d136cb61d649ff67916eb93e1bfcbbf203a9e7f3f09267f9bfa45ea2d",
+        "round35/results/synccheck-epoch0-stock/completion.json": "df6707bc00d09d077578fadfa41ec042a658d1cbefac49e7f8cc7cdc6395e65d",
+        "round35/results/synccheck-epoch0-stock/sanitizer-check.json": "2a11ad796946e9e337fee59f2b1af9042f9fc6017de132844b24ce4f426ad39a",
+        "round35/results/controller-baseline-validation/synccheck-epoch0-stock.log": "ecf2d6c803944e9515f70572d8c07d7f03fa4663144f5b9bf397e81d3a3f0418",
+        "round35/results/racecheck-epoch0-stock/completion.json": "54417bd311ea1618c64289bfff474d9b4d75f57d3977005e0254347f94e5eab6",
+        "round35/results/racecheck-epoch0-stock/sanitizer-check.json": "2a11ad796946e9e337fee59f2b1af9042f9fc6017de132844b24ce4f426ad39a",
+        "round35/results/controller-baseline-validation/racecheck-epoch0-stock.log": "f988e65c8d2feb76e49d56715d8578129f0a52afc81d1131d2cc65b30a0b65fa"
+      },
+      "validation_path": "round35/results/validate-epoch0-stock/validation.json",
+      "completion_path": "round35/results/validate-epoch0-stock/completion.json",
+      "sanitizers": {
+        "memcheck": {
+          "completion_path": "round35/results/memcheck-epoch0-stock/completion.json",
+          "check_path": "round35/results/memcheck-epoch0-stock/sanitizer-check.json",
+          "log_path": "round35/results/controller-baseline-validation/memcheck-epoch0-stock.log"
+        },
+        "synccheck": {
+          "completion_path": "round35/results/synccheck-epoch0-stock/completion.json",
+          "check_path": "round35/results/synccheck-epoch0-stock/sanitizer-check.json",
+          "log_path": "round35/results/controller-baseline-validation/synccheck-epoch0-stock.log"
+        },
+        "racecheck": {
+          "completion_path": "round35/results/racecheck-epoch0-stock/completion.json",
+          "check_path": "round35/results/racecheck-epoch0-stock/sanitizer-check.json",
+          "log_path": "round35/results/controller-baseline-validation/racecheck-epoch0-stock.log"
+        }
+      }
+    },
+    {
+      "binding": {
+        "source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+        "epoch": "epoch0",
+        "device": "NVIDIA GeForce RTX 3070",
+        "actual_source_sha256": "8c44f9931cabe9125e4ffb1a88f8732ce59cbbe84419de243200927fae45d374",
+        "complete_cubin_sha256": "96c9aa335669ac40590c22d195a9e440f791358332b9d25f551adc33a73c8ccc",
+        "returned_cubin_sha256": "24943810fd3eec93628697037b2c3a702e98639c32b47a13242c74276457be49",
+        "attributes": {
+          "max_threads_per_block": 1024,
+          "shared_size_bytes": 7172,
+          "const_size_bytes": 0,
+          "local_size_bytes": 0,
+          "num_regs": 56,
+          "ptx_version": 86,
+          "binary_version": 86,
+          "cache_mode_ca": 0,
+          "max_dynamic_shared_size_bytes": 41980,
+          "preferred_shared_memory_carveout": -1
+        },
+        "registers": 56,
+        "stack": 0,
+        "shared": 7172,
+        "local": 0,
+        "threads": 768,
+        "active_blocks_per_sm": 1,
+        "runtime_identity": {
+          "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+          "cuda_driver": 13000,
+          "cuda_runtime": 12090,
+          "cupy": "14.2.0"
+        },
+        "launch_config": {
+          "dynamic_shared_bytes": 0,
+          "row_limit": 0,
+          "carveout_preference": -1
+        }
+      },
+      "files": {
+        "round35/results/validate-epoch0-winner/validation.json": "9248adf608ddc07de873708eef4259c841303c6726f40dcf4f352e9b8ff38ef4",
+        "round35/results/validate-epoch0-winner/completion.json": "0c78930d08b7192b9361a3982da6eed957544fe15ccf97ef99756956fda96141",
+        "round35/results/memcheck-epoch0-winner/completion.json": "de03c7031ee65cf96023873b12ab7a46feee8dbac28abbf89254b0014be94ef9",
+        "round35/results/memcheck-epoch0-winner/sanitizer-check.json": "7e0ab77e7076c6254d03837914aa294e55f196adc330678f5570ae1df906a620",
+        "round35/results/controller-baseline-validation/memcheck-epoch0-winner.log": "9bc290a53d3786ef8255f310eda380226770c0d350b13e6aa7ecd6e504ae043b",
+        "round35/results/synccheck-epoch0-winner/completion.json": "e33f6061e73ebd77edc07e04ceba89b2bcbe6276f3218836478401e6de952eee",
+        "round35/results/synccheck-epoch0-winner/sanitizer-check.json": "7e0ab77e7076c6254d03837914aa294e55f196adc330678f5570ae1df906a620",
+        "round35/results/controller-baseline-validation/synccheck-epoch0-winner.log": "70e4d48eb591172ecc123871a753d7de87d9db7322a24296041e64055531b6dc",
+        "round35/results/racecheck-epoch0-winner/completion.json": "226f4a316c036f3e7aed19172029ea8882489484c5e09d053cc7b5f65216d22e",
+        "round35/results/racecheck-epoch0-winner/sanitizer-check.json": "7e0ab77e7076c6254d03837914aa294e55f196adc330678f5570ae1df906a620",
+        "round35/results/controller-baseline-validation/racecheck-epoch0-winner.log": "20ae766658438e0a2e6ec435f6c001252e516f2d6d0e0f055c0fe2859a93ac3f"
+      },
+      "validation_path": "round35/results/validate-epoch0-winner/validation.json",
+      "completion_path": "round35/results/validate-epoch0-winner/completion.json",
+      "sanitizers": {
+        "memcheck": {
+          "completion_path": "round35/results/memcheck-epoch0-winner/completion.json",
+          "check_path": "round35/results/memcheck-epoch0-winner/sanitizer-check.json",
+          "log_path": "round35/results/controller-baseline-validation/memcheck-epoch0-winner.log"
+        },
+        "synccheck": {
+          "completion_path": "round35/results/synccheck-epoch0-winner/completion.json",
+          "check_path": "round35/results/synccheck-epoch0-winner/sanitizer-check.json",
+          "log_path": "round35/results/controller-baseline-validation/synccheck-epoch0-winner.log"
+        },
+        "racecheck": {
+          "completion_path": "round35/results/racecheck-epoch0-winner/completion.json",
+          "check_path": "round35/results/racecheck-epoch0-winner/sanitizer-check.json",
+          "log_path": "round35/results/controller-baseline-validation/racecheck-epoch0-winner.log"
+        }
+      }
+    }
+  ],
+  "measurement_scope": {
+    "kind": "geometry",
+    "stage": "timing",
+    "mode": "stock_native",
+    "cycles": 20,
+    "nonces": 1840,
+    "nonce_base": 5740000,
+    "full_SHA": true,
+    "arms": {
+      "stock460_numpy": {
+        "module_role": "stock",
+        "blocks": 460,
+        "packer": "numpy"
+      },
+      "winner23_native": {
+        "module_role": "candidate",
+        "blocks": 23,
+        "packer": "native"
+      }
+    }
+  },
+  "geometry": {
+    "sources": {
+      "round35/geometry/support.py": "4b84e276860bd257acd7f04501f092a37876da158108442313b2349ae2ffe001",
+      "round35/geometry/run.py": "9672e68b42814b5d741a67bec99da86fbb405b1218558a571f0ee9bb6ff921b6",
+      "round35/geometry/analyze.py": "2187b525b7b71dfe6140dd4d678c9573c4ff0234df2704885eb8acf7c49e93d4",
+      "round35/geometry/cpu_check.py": "7484cc270cc8cb17a4568c1684b11fd02c8561c0dfd4b634c0fbf888c19bf962",
+      "round35/geometry/prepare_jobs.py": "6b22400b240b6cf958e870b7024ac51dccd2ba25d380cdcb5d7b8767c7f26741",
+      "round35/geometry/README.md": "9f5cb4430dd7f8698e79502987a096404a69d0e9155fc2246e82f0fe5c84ceed"
+    },
+    "scope": {
+      "stage": "timing",
+      "mode": "stock_native",
+      "cycles": 20,
+      "nonces": 1840,
+      "nonce_base": 5740000,
+      "full_SHA": true,
+      "arms": {
+        "stock460_numpy": {
+          "module_role": "stock",
+          "blocks": 460,
+          "packer": "numpy"
+        },
+        "winner23_native": {
+          "module_role": "candidate",
+          "blocks": 23,
+          "packer": "native"
+        }
+      }
+    },
+    "packing": {
+      "library_sha256": "cb7954dab94fd9b92432920851d3fd6d101dc7c3cb258f1553b8c0c888b34aa6",
+      "build_record_sha256": "63156e407c88d304074461b70c92e2eb90067a1be1f1f3c724bb3a835b9a6c27",
+      "cpu_proof_sha256": "06d30ba72430e18668796f1f64f8bce841dfd2e15129e92aefd4d0ab43c3ee07"
+    },
+    "validations": [
+      {
+        "validation": {
+          "path": "round35/results/geometry-epoch0-validate/geometry-validation.json",
+          "sha256": "e4e98ecd550f3cd54325bd3473021d37333b1c2712da65d5e7a5886ccdaf4620"
+        },
+        "completion": {
+          "path": "round35/results/geometry-epoch0-validate/geometry-completed.json",
+          "sha256": "43fcdb9d3bc49380f47ff1f9d43a379f5ee6387767308d7e4ebd3f763ab2cc3a"
+        },
+        "sanitizers": {
+          "memcheck": {
+            "check": {
+              "path": "round35/results/geometry-epoch0-memcheck/geometry-sanitizer.json",
+              "sha256": "e0ed6f395d3ce517bc4da63cd77c0ee79bc38b6dca0e95cad93730cde10b6d50"
+            },
+            "completion": {
+              "path": "round35/results/geometry-epoch0-memcheck/geometry-completed.json",
+              "sha256": "5931db3aa410f4f5f77af6af00aeea4155324d7d56b569a7c9b3446718666a37"
+            },
+            "log": {
+              "path": "round35/results/controller-geometry-validation/geometry-epoch0-memcheck.log",
+              "sha256": "911807b410d8d8f96f27ed95a55eb50c79a96b5e1db7297bc8962a818870cf62"
+            }
+          },
+          "synccheck": {
+            "check": {
+              "path": "round35/results/geometry-epoch0-synccheck/geometry-sanitizer.json",
+              "sha256": "e0ed6f395d3ce517bc4da63cd77c0ee79bc38b6dca0e95cad93730cde10b6d50"
+            },
+            "completion": {
+              "path": "round35/results/geometry-epoch0-synccheck/geometry-completed.json",
+              "sha256": "3c6be9c99e2e12be0e432f09a459f681a7d9adfeec7b5e7ac5b6d6f15ab03701"
+            },
+            "log": {
+              "path": "round35/results/controller-geometry-validation/geometry-epoch0-synccheck.log",
+              "sha256": "911807b410d8d8f96f27ed95a55eb50c79a96b5e1db7297bc8962a818870cf62"
+            }
+          },
+          "racecheck": {
+            "check": {
+              "path": "round35/results/geometry-epoch0-racecheck/geometry-sanitizer.json",
+              "sha256": "e0ed6f395d3ce517bc4da63cd77c0ee79bc38b6dca0e95cad93730cde10b6d50"
+            },
+            "completion": {
+              "path": "round35/results/geometry-epoch0-racecheck/geometry-completed.json",
+              "sha256": "490d3c6bf8dab5e9456bc04af4cc9e79072d6d33df3e49f78c778c84b86b46d9"
+            },
+            "log": {
+              "path": "round35/results/controller-geometry-validation/geometry-epoch0-racecheck.log",
+              "sha256": "68649bdf5e206af6c5ca28d623713001134ab56ad741776a6c07f4400833e7c2"
+            }
+          }
+        }
+      }
+    ],
+    "controller_receipts": [
+      {
+        "completion": {
+          "path": "round35/results/controller-geometry-validation/completed.json",
+          "sha256": "e077c47ca40c0b14d78e05de6f4f664171a587906d0daf7f289ff19de4db37d6"
+        },
+        "jobs": {
+          "path": "round35/results/controller-geometry-validation/jobs.jsonl",
+          "sha256": "f41480f702b68ac5a56399d9727edd2e41d95bac23fc454d3f61c5da69435011"
+        },
+        "all_exit_codes_zero": true,
+        "exact_job_arguments_verified": true,
+        "plan": {
+          "path": "round35/geometry/plans/initial-all-three/PLAN.json",
+          "sha256": "409582aa045482043e73de26dd7caa37bce055a48d16016e4c6293442de5369f"
+        }
+      }
+    ],
+    "packing_confirmation": [
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/packing-epoch0.json",
+        "sha256": "c01ace3f222a245e82901b2a29a4ef1bcd8fe17b72324107bb547e6ac15df8d6"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/packing-fresh.json",
+        "sha256": "e3e353c7c234fd3d0c0a43485edf3e81ca57db7457efc4a5b88a2b2e6de46545"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/packing-holdout.json",
+        "sha256": "d21d6c8a023152d76a252f7ef6d8776ad77343d0d0787a23a38b7deeae26ea9a"
+      }
+    ],
+    "geometry_confirmation": [
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/paired-epoch0.json",
+        "sha256": "6c70c002ddfbc0094108cb9b8fc65d97dff456a21b510e33e4a243f192270f8c"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/paired-fresh.json",
+        "sha256": "c71ed46f9e22e4f79fa80436df14a1abb29d8b8de04166239de364016e10a410"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/paired-holdout.json",
+        "sha256": "7efa98bd0f35ba892e9f244e5b0f4ae8c806f2b6918223ec58d1d72ad042aaa7"
+      }
+    ],
+    "combination_confirmation": [
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/combo-epoch0.json",
+        "sha256": "2e781c15fc50d7e9958bc1dcaffe36ecc03f145eebeb5c034d32e790f141f108"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/combo-fresh.json",
+        "sha256": "9fc62b2e0818ace3d7caf152329d42e73b0a652696cd7e7ee73e5c7e0dd5959f"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/combo-holdout.json",
+        "sha256": "fcb08fdebd5a2165ee0f935e0b5244cffeacf4bcc4ab401bccf6738de0395943"
+      }
+    ],
+    "conditional_assembler": {
+      "path": "round35/geometry/assemble_conditional.py",
+      "sha256": "e9f2847603a3e94b15ed7c924b2c14eb1c01f0b025a503540edf0f1645056a20"
+    },
+    "confirmation_evidence": {
+      "packing": [
+        {
+          "analysis": {
+            "path": "round35/results/packing-epoch0-confirm-analysis.json",
+            "sha256": "c01ace3f222a245e82901b2a29a4ef1bcd8fe17b72324107bb547e6ac15df8d6"
+          },
+          "closure": {
+            "path": "round35/results/packing-epoch0-confirm/packing-completed.json",
+            "sha256": "cba22859df74726c2d50c325fe38e880602539456f3388f70a963f46d2f91669"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-candidate-validation/completed.json",
+              "sha256": "ea5a43a6b279805cd73404f6191da75c57f21d668105a21fcf730a6ebd371a86"
+            },
+            "jobs": {
+              "path": "round35/results/controller-candidate-validation/jobs.jsonl",
+              "sha256": "8d497a360a3e7a6883a14dc996cb1c9905654acf1800c9a288dc7df476586cd9"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-extended-validation.json",
+              "sha256": "31c052555495ad820975ee9820d49d7bc3e572952a94764ebbb074de5e165649"
+            },
+            "measured_job": "packing-epoch0-confirm"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/packing-fresh-confirm-analysis.json",
+            "sha256": "e3e353c7c234fd3d0c0a43485edf3e81ca57db7457efc4a5b88a2b2e6de46545"
+          },
+          "closure": {
+            "path": "round35/results/packing-fresh-confirm/packing-completed.json",
+            "sha256": "bff689f9d9bd7c56c681901e4cfce3a890fd704a77b8f8240c60925cf986afe3"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-candidate-validation/completed.json",
+              "sha256": "ea5a43a6b279805cd73404f6191da75c57f21d668105a21fcf730a6ebd371a86"
+            },
+            "jobs": {
+              "path": "round35/results/controller-candidate-validation/jobs.jsonl",
+              "sha256": "8d497a360a3e7a6883a14dc996cb1c9905654acf1800c9a288dc7df476586cd9"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-extended-validation.json",
+              "sha256": "31c052555495ad820975ee9820d49d7bc3e572952a94764ebbb074de5e165649"
+            },
+            "measured_job": "packing-fresh-confirm"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/packing-holdout-confirm-analysis.json",
+            "sha256": "d21d6c8a023152d76a252f7ef6d8776ad77343d0d0787a23a38b7deeae26ea9a"
+          },
+          "closure": {
+            "path": "round35/results/packing-holdout-confirm/packing-completed.json",
+            "sha256": "5d2fa2adbcd177c23d2ce52fdcad7a92412eb05bb28b637a35bd55303c20ee58"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-primary-performance/completed.json",
+              "sha256": "490891eba9913a41f2a22d1d6f1b4e52751d011de3caa39429ba28e5e1a056e7"
+            },
+            "jobs": {
+              "path": "round35/results/controller-primary-performance/jobs.jsonl",
+              "sha256": "b7a7386d26bba38e782163c2c50f2c306c1eff39f3e258d12607b7c4b203cce6"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-primary-performance.json",
+              "sha256": "9566cb4396c2446312f452ee33a0a95be1abad9b003ec7f5729c9645f2d0fb0f"
+            },
+            "measured_job": "packing-holdout-confirm"
+          }
+        }
+      ],
+      "paired": [
+        {
+          "analysis": {
+            "path": "round35/results/geometry-epoch0-paired-analysis.json",
+            "sha256": "6c70c002ddfbc0094108cb9b8fc65d97dff456a21b510e33e4a243f192270f8c"
+          },
+          "closure": {
+            "path": "round35/results/geometry-epoch0-paired/geometry-completed.json",
+            "sha256": "74e38ffa8150110aaf9c9f4820fa7b2c8a2971791943a44d729a14c845891c93"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-paired/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-paired/jobs.jsonl",
+              "sha256": "d424475f863056518010ffbe930cdbb44ffa4c49bf1e471fad779523b1e46336"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-paired.json",
+              "sha256": "1d4db39e70ef5ff518c031dcea8a299b2bd6592cbd5bae566857c6fda801e077"
+            },
+            "measured_job": "geometry-epoch0-paired"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/geometry-fresh-paired-analysis.json",
+            "sha256": "c71ed46f9e22e4f79fa80436df14a1abb29d8b8de04166239de364016e10a410"
+          },
+          "closure": {
+            "path": "round35/results/geometry-fresh-paired/geometry-completed.json",
+            "sha256": "9a9913884d957b912a84952c2af4ea9838595f67ef7703c7cc03927eacf22ce6"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-paired/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-paired/jobs.jsonl",
+              "sha256": "d424475f863056518010ffbe930cdbb44ffa4c49bf1e471fad779523b1e46336"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-paired.json",
+              "sha256": "1d4db39e70ef5ff518c031dcea8a299b2bd6592cbd5bae566857c6fda801e077"
+            },
+            "measured_job": "geometry-fresh-paired"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/geometry-holdout-paired-analysis.json",
+            "sha256": "7efa98bd0f35ba892e9f244e5b0f4ae8c806f2b6918223ec58d1d72ad042aaa7"
+          },
+          "closure": {
+            "path": "round35/results/geometry-holdout-paired/geometry-completed.json",
+            "sha256": "98d6a782f62d89811ee47ab130c610ef648eec4b4a1b3c159b99164b2bd346fa"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-paired/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-paired/jobs.jsonl",
+              "sha256": "d424475f863056518010ffbe930cdbb44ffa4c49bf1e471fad779523b1e46336"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-paired.json",
+              "sha256": "1d4db39e70ef5ff518c031dcea8a299b2bd6592cbd5bae566857c6fda801e077"
+            },
+            "measured_job": "geometry-holdout-paired"
+          }
+        }
+      ],
+      "combo": [
+        {
+          "analysis": {
+            "path": "round35/results/geometry-epoch0-combo-analysis.json",
+            "sha256": "2e781c15fc50d7e9958bc1dcaffe36ecc03f145eebeb5c034d32e790f141f108"
+          },
+          "closure": {
+            "path": "round35/results/geometry-epoch0-combo/geometry-completed.json",
+            "sha256": "1fd9fe2cc0df06a6abeee170fe8892aa049158e7e61a4434dd0062cfc3e7a750"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-combo/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-combo/jobs.jsonl",
+              "sha256": "93cb3b8da612b20909d57f0db48df732888468315cac54e6102a2b3a7b745cbd"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-combo.json",
+              "sha256": "966873b62befdaacdc657756436dc47e76ad2291acbb6eb478030b0f185ee4e5"
+            },
+            "measured_job": "geometry-epoch0-combo"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/geometry-fresh-combo-analysis.json",
+            "sha256": "9fc62b2e0818ace3d7caf152329d42e73b0a652696cd7e7ee73e5c7e0dd5959f"
+          },
+          "closure": {
+            "path": "round35/results/geometry-fresh-combo/geometry-completed.json",
+            "sha256": "e61c7ce5cbefb15a707042cbe46057896f23177f31467fe8ea5879ace9c4bdf8"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-combo/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-combo/jobs.jsonl",
+              "sha256": "93cb3b8da612b20909d57f0db48df732888468315cac54e6102a2b3a7b745cbd"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-combo.json",
+              "sha256": "966873b62befdaacdc657756436dc47e76ad2291acbb6eb478030b0f185ee4e5"
+            },
+            "measured_job": "geometry-fresh-combo"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/geometry-holdout-combo-analysis.json",
+            "sha256": "fcb08fdebd5a2165ee0f935e0b5244cffeacf4bcc4ab401bccf6738de0395943"
+          },
+          "closure": {
+            "path": "round35/results/geometry-holdout-combo/geometry-completed.json",
+            "sha256": "40409c0c9497bc6adce850d4d41f62330e3656784be965dfe72acb47beb2b20c"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-combo/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-combo/jobs.jsonl",
+              "sha256": "93cb3b8da612b20909d57f0db48df732888468315cac54e6102a2b3a7b745cbd"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-combo.json",
+              "sha256": "966873b62befdaacdc657756436dc47e76ad2291acbb6eb478030b0f185ee4e5"
+            },
+            "measured_job": "geometry-holdout-combo"
+          }
+        }
+      ]
+    }
+  }
+}

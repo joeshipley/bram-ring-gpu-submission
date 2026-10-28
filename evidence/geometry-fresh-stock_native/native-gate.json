@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "before_any_mining_launch": true,
+  "modules": {
+    "stock": {
+      "source": "rtx3070-handoff/gpu/mine.py",
+      "source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+      "epoch": "bram-round30-heldout-3a35531748763d5c36d607ea",
+      "device": "NVIDIA GeForce RTX 3070",
+      "actual_source_sha256": "b03c80f9f3fba8743c084400d063452ca8070aa77349e8084875b6aecdeb5c49",
+      "complete_cubin_sha256": "6dacb86383604c01262f476770d71585c1f58670e1a3fcd6b8926c5469cc6ea3",
+      "returned_cubin_sha256": "415abc6e1c240150fea61080c6d7e19628cad8e5a1d39952fdeedbc78d6a757e",
+      "capture_index": 0,
+      "attributes": {
+        "max_threads_per_block": 768,
+        "shared_size_bytes": 7172,
+        "const_size_bytes": 0,
+        "local_size_bytes": 0,
+        "num_regs": 40,
+        "ptx_version": 86,
+        "binary_version": 86,
+        "cache_mode_ca": 0,
+        "max_dynamic_shared_size_bytes": 41980,
+        "preferred_shared_memory_carveout": -1
+      },
+      "registers": 40,
+      "stack": 0,
+      "shared": 7172,
+      "local": 0,
+      "threads": 768,
+      "active_blocks_per_sm": 2,
+      "occupancy_fraction": 1.0,
+      "driver_function_ptr": 961902880,
+      "free_memory_before_mining_bytes": 8011055104,
+      "sass_sha256": "fa152d172df0e9f9f57c83bc78049387a899ada6b052e0a325080756721211a3",
+      "generated_source_sha256": "b03c80f9f3fba8743c084400d063452ca8070aa77349e8084875b6aecdeb5c49",
+      "runtime_identity": {
+        "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+        "cuda_driver": 13000,
+        "cuda_runtime": 12090,
+        "cupy": "14.2.0"
+      },
+      "provenance": "actual_nvrtc_capture",
+      "launch_config": {
+        "dynamic_shared_bytes": 0,
+        "row_limit": 0,
+        "carveout_preference": -1
+      }
+    },
+    "candidate": {
+      "source": "round33/rulewide/candidates/rule_u64.py",
+      "source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+      "epoch": "bram-round30-heldout-3a35531748763d5c36d607ea",
+      "device": "NVIDIA GeForce RTX 3070",
+      "actual_source_sha256": "36c809c7e32de245ad9557f071b1a3228eedc1b6c4efdca529eda57163a43998",
+      "complete_cubin_sha256": "9c6b656e8c4f00aba69c3b055133eb778c706e0257b02fe32f86fca173f9a2fb",
+      "returned_cubin_sha256": "4d000504fe81ef43234e95dd6b270214da519f5fc2f6375e0fb7695ae2dc60a0",
+      "capture_index": 1,
+      "attributes": {
+        "max_threads_per_block": 1024,
+        "shared_size_bytes": 7172,
+        "const_size_bytes": 0,
+        "local_size_bytes": 0,
+        "num_regs": 56,
+        "ptx_version": 86,
+        "binary_version": 86,
+        "cache_mode_ca": 0,
+        "max_dynamic_shared_size_bytes": 41980,
+        "preferred_shared_memory_carveout": -1
+      },
+      "registers": 56,
+      "stack": 0,
+      "shared": 7172,
+      "local": 0,
+      "threads": 768,
+      "active_blocks_per_sm": 1,
+      "occupancy_fraction": 0.5,
+      "driver_function_ptr": 964427760,
+      "free_memory_before_mining_bytes": 8011055104,
+      "sass_sha256": "4efc28dbea9bbd90ab610e6cb82b438c962b91c2ce5f18fe459309151e6cc208",
+      "generated_source_sha256": "36c809c7e32de245ad9557f071b1a3228eedc1b6c4efdca529eda57163a43998",
+      "runtime_identity": {
+        "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+        "cuda_driver": 13000,
+        "cuda_runtime": 12090,
+        "cupy": "14.2.0"
+      },
+      "provenance": "actual_nvrtc_capture",
+      "launch_config": {
+        "dynamic_shared_bytes": 0,
+        "row_limit": 0,
+        "carveout_preference": -1
+      }
+    }
+  },
+  "device": {
+    "name": "NVIDIA GeForce RTX 3070",
+    "major": 8,
+    "minor": 6,
+    "multiProcessorCount": 46,
+    "totalGlobalMem": 8219328512,
+    "l2CacheSize": 4194304,
+    "maxThreadsPerMultiProcessor": 1536,
+    "regsPerMultiprocessor": 65536,
+    "sharedMemPerMultiprocessor": 102400,
+    "free_memory_before_mining_bytes": 8011055104,
+    "reported_total_memory_bytes": 8219328512,
+    "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+    "cuda_driver": 13000,
+    "cuda_runtime": 12090,
+    "cupy": "14.2.0",
+    "reservedSharedMemPerBlock": 1024,
+    "sharedMemPerBlockOptin": 101376,
+    "sharedMemPerBlock": 49152
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "CPU_check_command": "python -B cpu_check.py",
+  "GPU_execution_of_this_package": "pending",
+  "explicit23blocks_and_native_pack_only_after_separate_confirmation": true,
+  "final_combination_selection": "pending",
+  "organizer_acceptance": "not_requested",
+  "prize_qualification_claim": null,
+  "published_or_submitted": false,
+  "source_candidate_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+  "status": "conditional_preparation_no_GPU_execution_or_claim"
+}

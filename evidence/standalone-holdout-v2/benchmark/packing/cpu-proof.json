@@ -1,0 +1,153 @@
+{
+  "bit_placement_cases": 128,
+  "build_record_sha256": "0c3d0c2f560876b07759051ca74011ba7410230f228ade0fe46a41d07986d81d",
+  "golden_vectors": [
+    {
+      "every_digest_equal": true,
+      "path": "packing/vectors/epoch0.txt",
+      "sha256": "d406e2319f21e641dc77fcf79693c88062cc312cd1d75f0c286fa4ba85cf88f1",
+      "vectors": 8
+    },
+    {
+      "every_digest_equal": true,
+      "path": "packing/vectors/round30.txt",
+      "sha256": "1716ef39dfd72cc8e023fb6628ec6834adedfe5e65982cd61c5f5f8299ca52e8",
+      "vectors": 8
+    },
+    {
+      "every_digest_equal": true,
+      "path": "packing/vectors/round34.txt",
+      "sha256": "b1734f29e280b6ae4b0e2d4c9c8dfeab31d2581a6520a99ce549ab4f64597958",
+      "vectors": 8
+    }
+  ],
+  "library_sha256": "cb7954dab94fd9b92432920851d3fd6d101dc7c3cb258f1553b8c0c888b34aa6",
+  "machine": "x86_64",
+  "numpy": "2.5.4",
+  "positive_cases": [
+    {
+      "name": "all20bit_values",
+      "output_sha256": "ad23780e536cf02dd0b262e915a061e5fa22e6225792a3927aa7dfab01a8734c",
+      "words": 1048576
+    },
+    {
+      "name": "random_u32",
+      "nonces": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "all_ones",
+      "nonces": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "random_u32",
+      "nonces": 1,
+      "output_sha256": "1df8b5bea310b9a5b1296857bd11f8bae59401c7891e0b8640a69499dd5a0422"
+    },
+    {
+      "name": "all_ones",
+      "nonces": 1,
+      "output_sha256": "adea5e0a9361c2700525b2452f81230a0f5c1fb310669e1a5b1d779143b9e297"
+    },
+    {
+      "name": "random_u32",
+      "nonces": 2,
+      "output_sha256": "cf6a0e691d6ba33c0ee235e487c25f86733738aad4ceea7432329543c42c3ce0"
+    },
+    {
+      "name": "all_ones",
+      "nonces": 2,
+      "output_sha256": "d397edef4cf4719aa6670603a4abe242d870f1ac33e619dc894b24dc1eb9b413"
+    },
+    {
+      "name": "random_u32",
+      "nonces": 3,
+      "output_sha256": "eab29189c0341705354410d1dbd165ea6db611279a87541284eaa4b9beb4d61d"
+    },
+    {
+      "name": "all_ones",
+      "nonces": 3,
+      "output_sha256": "82eec5ad244bc79d0380bffcca90f9121334b8494ad52e593baff095a42b9583"
+    },
+    {
+      "name": "random_u32",
+      "nonces": 5,
+      "output_sha256": "eb07ccf549d774d8cfd5b9568f5eda248e41f3ba1afcb154b9a2ed6da655aa9a"
+    },
+    {
+      "name": "all_ones",
+      "nonces": 5,
+      "output_sha256": "57087531736fedc5e3f7314f195a716eab4e247e0e3deb922afec401d081026f"
+    },
+    {
+      "name": "random_u32",
+      "nonces": 17,
+      "output_sha256": "430b90f676379dcedfd2795e24f3fd9d519f0aeaefd7ca1fe411ac880f9e33ff"
+    },
+    {
+      "name": "all_ones",
+      "nonces": 17,
+      "output_sha256": "dedaa98c47f47866cecaccd0b8e038433b7f19b5a50c913e9b7b89fd472c3efc"
+    },
+    {
+      "name": "random_u32",
+      "nonces": 1840,
+      "output_sha256": "b79feafa52a1b77483b435724141646055b77ee28edf60efdf6474b5daed3a90"
+    },
+    {
+      "name": "all_ones",
+      "nonces": 1840,
+      "output_sha256": "b91252c30d78f3fd5b52f067fb535fad5530602503bc09296cf51a0ce9882616"
+    },
+    {
+      "cases": 128,
+      "name": "all32bits_each4word_position"
+    }
+  ],
+  "python": "3.12.3",
+  "python_contract_rejections": [
+    "wrong_width",
+    "wrong_lane_count",
+    "wrong_dtype",
+    "opposite_endian",
+    "strided",
+    "wrong_shape",
+    "wrong_columns",
+    "non_array"
+  ],
+  "sanitizer": {
+    "command": [
+      "/usr/bin/cc",
+      "-std=c11",
+      "-O1",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fno-omit-frame-pointer",
+      "-fsanitize=address,undefined",
+      "/root/bram35-standalone-v2/bram-round35/packing/pack.c",
+      "/root/bram35-standalone-v2/bram-round35/packing/sanitize.c",
+      "-o",
+      "/tmp/bram-pack-sanitizer-_3yhfwds/sanitize"
+    ],
+    "exit_code": 0,
+    "status": "passed",
+    "stderr": "",
+    "stdout": "CPU address/undefined sanitizer and exact-size tail checks passed\n",
+    "tools": [
+      "address",
+      "undefined"
+    ]
+  },
+  "sources": {
+    "adapter.py": "37848cc534536442dc04e198e6c7fbdf20efdfd9874e9930cc223e0b82b5c579",
+    "build.py": "64c054688b1e4131791b297e66993bf63c8c097967d75fed07110bb66d2c4eae",
+    "cpu_check.py": "4ebb8406c5abcb9e58edf8e91f7521e68bb7330c0d991602843cf09f9eeb3561",
+    "pack.c": "fd9a9d84b75ceae9a1db8aedf22d901120d3f685908d444574c75b3b1ea871c9",
+    "sanitize.c": "21334339d129f9689734bb6e5a925be0a3fe65aa6f34f1b4d4a70f1ce3c5eda7"
+  },
+  "status": "passed_cpu_only_not_gpu_validated",
+  "unaligned_guard_cases": 80
+}

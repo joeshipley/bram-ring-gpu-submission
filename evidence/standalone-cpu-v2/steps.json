@@ -1,0 +1,41 @@
+[
+  {
+    "argv": [
+      "/root/bram35/.venv/bin/python",
+      "-B",
+      "bench.py",
+      "--check-package"
+    ],
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "/root/bram35/.venv/bin/python",
+      "-B",
+      "cpu_check.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "/root/bram35/.venv/bin/python",
+      "-B",
+      "packing/build.py",
+      "--output",
+      "build/native-pack"
+    ],
+    "exit_code": 0
+  },
+  {
+    "argv": [
+      "/root/bram35/.venv/bin/python",
+      "-B",
+      "packing/cpu_check.py",
+      "--build",
+      "build/native-pack",
+      "--output",
+      "build/native-pack/cpu-proof.json"
+    ],
+    "exit_code": 0
+  }
+]

@@ -1,0 +1,6 @@
+
+Resource usage:
+ Common:
+  GLOBAL:0
+ Function ring_mine:
+  REG:40 STACK:0 SHARED:7172 LOCAL:0 CONSTANT[2]:8 CONSTANT[0]:452 TEXTURE:0 SURFACE:0 SAMPLER:0

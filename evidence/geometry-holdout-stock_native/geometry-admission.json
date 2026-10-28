@@ -1,0 +1,655 @@
+{
+  "status": "admitted",
+  "epoch": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+  "bindings": [
+    {
+      "source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+      "epoch": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+      "device": "NVIDIA GeForce RTX 3070",
+      "actual_source_sha256": "91f120b47ca644aa39f662dd0f023407231e32ea8eb2928f7d1b2bdb692e4f1c",
+      "complete_cubin_sha256": "9f8192f54a21f303d4c23f2c295c98f187417de252dc9154f64cbecaf46e1857",
+      "returned_cubin_sha256": "cea39c3568fda8fc613d525b6a774d45f3faaeadb2ce33ccfb0f3fd069f6f7b7",
+      "attributes": {
+        "max_threads_per_block": 768,
+        "shared_size_bytes": 7172,
+        "const_size_bytes": 0,
+        "local_size_bytes": 0,
+        "num_regs": 40,
+        "ptx_version": 86,
+        "binary_version": 86,
+        "cache_mode_ca": 0,
+        "max_dynamic_shared_size_bytes": 41980,
+        "preferred_shared_memory_carveout": -1
+      },
+      "registers": 40,
+      "stack": 0,
+      "shared": 7172,
+      "local": 0,
+      "threads": 768,
+      "active_blocks_per_sm": 2,
+      "runtime_identity": {
+        "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+        "cuda_driver": 13000,
+        "cuda_runtime": 12090,
+        "cupy": "14.2.0"
+      },
+      "launch_config": {
+        "dynamic_shared_bytes": 0,
+        "row_limit": 0,
+        "carveout_preference": -1
+      }
+    },
+    {
+      "source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+      "epoch": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+      "device": "NVIDIA GeForce RTX 3070",
+      "actual_source_sha256": "0c2be7dba4b300f57b9a8a95059d34a3fc5b1e8cd7a31e1b5b6471ee3136d067",
+      "complete_cubin_sha256": "96a10743673e0434043b6ceaba9feb44f9412486f3495903094c538f62e72f7d",
+      "returned_cubin_sha256": "90e182cbf8774212da524d09a49950611779afdecc85a8c92fe4f337206676c7",
+      "attributes": {
+        "max_threads_per_block": 1024,
+        "shared_size_bytes": 7172,
+        "const_size_bytes": 0,
+        "local_size_bytes": 0,
+        "num_regs": 56,
+        "ptx_version": 86,
+        "binary_version": 86,
+        "cache_mode_ca": 0,
+        "max_dynamic_shared_size_bytes": 41980,
+        "preferred_shared_memory_carveout": -1
+      },
+      "registers": 56,
+      "stack": 0,
+      "shared": 7172,
+      "local": 0,
+      "threads": 768,
+      "active_blocks_per_sm": 1,
+      "runtime_identity": {
+        "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+        "cuda_driver": 13000,
+        "cuda_runtime": 12090,
+        "cupy": "14.2.0"
+      },
+      "launch_config": {
+        "dynamic_shared_bytes": 0,
+        "row_limit": 0,
+        "carveout_preference": -1
+      }
+    }
+  ],
+  "validations": [
+    {
+      "binding": {
+        "source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+        "epoch": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+        "device": "NVIDIA GeForce RTX 3070",
+        "actual_source_sha256": "91f120b47ca644aa39f662dd0f023407231e32ea8eb2928f7d1b2bdb692e4f1c",
+        "complete_cubin_sha256": "9f8192f54a21f303d4c23f2c295c98f187417de252dc9154f64cbecaf46e1857",
+        "returned_cubin_sha256": "cea39c3568fda8fc613d525b6a774d45f3faaeadb2ce33ccfb0f3fd069f6f7b7",
+        "attributes": {
+          "max_threads_per_block": 768,
+          "shared_size_bytes": 7172,
+          "const_size_bytes": 0,
+          "local_size_bytes": 0,
+          "num_regs": 40,
+          "ptx_version": 86,
+          "binary_version": 86,
+          "cache_mode_ca": 0,
+          "max_dynamic_shared_size_bytes": 41980,
+          "preferred_shared_memory_carveout": -1
+        },
+        "registers": 40,
+        "stack": 0,
+        "shared": 7172,
+        "local": 0,
+        "threads": 768,
+        "active_blocks_per_sm": 2,
+        "runtime_identity": {
+          "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+          "cuda_driver": 13000,
+          "cuda_runtime": 12090,
+          "cupy": "14.2.0"
+        },
+        "launch_config": {
+          "dynamic_shared_bytes": 0,
+          "row_limit": 0,
+          "carveout_preference": -1
+        }
+      },
+      "files": {
+        "round35/results/validate-holdout-stock/validation.json": "ff5f102f627b85553ee4ea5c23e8c815e2cb35d324d305640c122687f4ee9577",
+        "round35/results/validate-holdout-stock/completion.json": "a4b58006848955051a7d20fb4713b5d84df312effa028a9fcecbe64bbbe4fa53",
+        "round35/results/controller-candidate-validation/completed.json": "ea5a43a6b279805cd73404f6191da75c57f21d668105a21fcf730a6ebd371a86",
+        "round35/results/controller-candidate-validation/jobs.jsonl": "8d497a360a3e7a6883a14dc996cb1c9905654acf1800c9a288dc7df476586cd9",
+        "round35/results/memcheck-holdout-stock/completion.json": "f61ec3a160354e1b3575ecb520f4a84fd53715d54b826a49de8e67debfac3235",
+        "round35/results/memcheck-holdout-stock/sanitizer-check.json": "2cf82e4f430dabbb392ed74e9aa16906947fd609524245869b7ce60b359a9aed",
+        "round35/results/controller-candidate-validation/memcheck-holdout-stock.log": "fd5d762395a43d28e04fde1fa9777c69a1457c68a258852b07fd6d8794978886",
+        "round35/results/synccheck-holdout-stock/completion.json": "18525ea9ff2d6996c13619b628ea296a7390afb48d97479bce1cdb0da48d1f93",
+        "round35/results/synccheck-holdout-stock/sanitizer-check.json": "2cf82e4f430dabbb392ed74e9aa16906947fd609524245869b7ce60b359a9aed",
+        "round35/results/controller-candidate-validation/synccheck-holdout-stock.log": "5e14ec3d34736995c210302f4ced1a2b7e7998f86a7f7abd48a45dac2cfb3de6",
+        "round35/results/racecheck-holdout-stock/completion.json": "8a6cb73955c1d4b857db2c17a9fbc80280835a7e1d422eaed29aebcd15fb7a46",
+        "round35/results/racecheck-holdout-stock/sanitizer-check.json": "2cf82e4f430dabbb392ed74e9aa16906947fd609524245869b7ce60b359a9aed",
+        "round35/results/controller-candidate-validation/racecheck-holdout-stock.log": "0e63d48d8a34f739e8f7e31284be1c7c6b274615b74a70af20e477d2b2b7e6eb"
+      },
+      "validation_path": "round35/results/validate-holdout-stock/validation.json",
+      "completion_path": "round35/results/validate-holdout-stock/completion.json",
+      "sanitizers": {
+        "memcheck": {
+          "completion_path": "round35/results/memcheck-holdout-stock/completion.json",
+          "check_path": "round35/results/memcheck-holdout-stock/sanitizer-check.json",
+          "log_path": "round35/results/controller-candidate-validation/memcheck-holdout-stock.log"
+        },
+        "synccheck": {
+          "completion_path": "round35/results/synccheck-holdout-stock/completion.json",
+          "check_path": "round35/results/synccheck-holdout-stock/sanitizer-check.json",
+          "log_path": "round35/results/controller-candidate-validation/synccheck-holdout-stock.log"
+        },
+        "racecheck": {
+          "completion_path": "round35/results/racecheck-holdout-stock/completion.json",
+          "check_path": "round35/results/racecheck-holdout-stock/sanitizer-check.json",
+          "log_path": "round35/results/controller-candidate-validation/racecheck-holdout-stock.log"
+        }
+      }
+    },
+    {
+      "binding": {
+        "source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+        "epoch": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+        "device": "NVIDIA GeForce RTX 3070",
+        "actual_source_sha256": "0c2be7dba4b300f57b9a8a95059d34a3fc5b1e8cd7a31e1b5b6471ee3136d067",
+        "complete_cubin_sha256": "96a10743673e0434043b6ceaba9feb44f9412486f3495903094c538f62e72f7d",
+        "returned_cubin_sha256": "90e182cbf8774212da524d09a49950611779afdecc85a8c92fe4f337206676c7",
+        "attributes": {
+          "max_threads_per_block": 1024,
+          "shared_size_bytes": 7172,
+          "const_size_bytes": 0,
+          "local_size_bytes": 0,
+          "num_regs": 56,
+          "ptx_version": 86,
+          "binary_version": 86,
+          "cache_mode_ca": 0,
+          "max_dynamic_shared_size_bytes": 41980,
+          "preferred_shared_memory_carveout": -1
+        },
+        "registers": 56,
+        "stack": 0,
+        "shared": 7172,
+        "local": 0,
+        "threads": 768,
+        "active_blocks_per_sm": 1,
+        "runtime_identity": {
+          "uuid": "GPU-c6ad28b5-414f-4c9b-8299-c782e09bce37",
+          "cuda_driver": 13000,
+          "cuda_runtime": 12090,
+          "cupy": "14.2.0"
+        },
+        "launch_config": {
+          "dynamic_shared_bytes": 0,
+          "row_limit": 0,
+          "carveout_preference": -1
+        }
+      },
+      "files": {
+        "round35/results/validate-holdout-winner/validation.json": "799150459693b8a50f2ce1f362d6751e17921f1cd21701cafa82b0eb17f6022e",
+        "round35/results/validate-holdout-winner/completion.json": "441b9f36f3229bc569249178986bdbb057fbf38994695e3e19c36d90d0930e5e",
+        "round35/results/controller-candidate-validation/completed.json": "ea5a43a6b279805cd73404f6191da75c57f21d668105a21fcf730a6ebd371a86",
+        "round35/results/controller-candidate-validation/jobs.jsonl": "8d497a360a3e7a6883a14dc996cb1c9905654acf1800c9a288dc7df476586cd9",
+        "round35/results/memcheck-holdout-winner/completion.json": "51d92a1f00f064b3abcd11c6e1cace5b0e73824819e413668963323dff50c059",
+        "round35/results/memcheck-holdout-winner/sanitizer-check.json": "8d04d3c384f2bb3ff3cb517f37d3b472240a2ddf72c16dde6d7c95b0b8750246",
+        "round35/results/controller-candidate-validation/memcheck-holdout-winner.log": "b41dde3a7797a7290d1d9acd84d3e7dcfe77dc9511983ffa3db978b0da4b308d",
+        "round35/results/synccheck-holdout-winner/completion.json": "fdbec8accb63a3c0fbe7d3d781f7238d90163bc9961f1e6ee2ce481af5f9029b",
+        "round35/results/synccheck-holdout-winner/sanitizer-check.json": "8d04d3c384f2bb3ff3cb517f37d3b472240a2ddf72c16dde6d7c95b0b8750246",
+        "round35/results/controller-candidate-validation/synccheck-holdout-winner.log": "27ac0639e2899dd4417d4519a2d39c2f496e681611f2765a455f96feba48eadc",
+        "round35/results/racecheck-holdout-winner/completion.json": "dcefd83f94ed90e73e52714b5dd58d60b4bd61fe1407faddd385703b7f1ccfb7",
+        "round35/results/racecheck-holdout-winner/sanitizer-check.json": "8d04d3c384f2bb3ff3cb517f37d3b472240a2ddf72c16dde6d7c95b0b8750246",
+        "round35/results/controller-candidate-validation/racecheck-holdout-winner.log": "7a502c01dddf5bda64ce8cdf81f1db850b9ed061d1332396d73e1f740759671b"
+      },
+      "validation_path": "round35/results/validate-holdout-winner/validation.json",
+      "completion_path": "round35/results/validate-holdout-winner/completion.json",
+      "sanitizers": {
+        "memcheck": {
+          "completion_path": "round35/results/memcheck-holdout-winner/completion.json",
+          "check_path": "round35/results/memcheck-holdout-winner/sanitizer-check.json",
+          "log_path": "round35/results/controller-candidate-validation/memcheck-holdout-winner.log"
+        },
+        "synccheck": {
+          "completion_path": "round35/results/synccheck-holdout-winner/completion.json",
+          "check_path": "round35/results/synccheck-holdout-winner/sanitizer-check.json",
+          "log_path": "round35/results/controller-candidate-validation/synccheck-holdout-winner.log"
+        },
+        "racecheck": {
+          "completion_path": "round35/results/racecheck-holdout-winner/completion.json",
+          "check_path": "round35/results/racecheck-holdout-winner/sanitizer-check.json",
+          "log_path": "round35/results/controller-candidate-validation/racecheck-holdout-winner.log"
+        }
+      }
+    }
+  ],
+  "measurement_scope": {
+    "kind": "geometry",
+    "stage": "timing",
+    "mode": "stock_native",
+    "cycles": 20,
+    "nonces": 1840,
+    "nonce_base": 5740000,
+    "full_SHA": true,
+    "arms": {
+      "stock460_numpy": {
+        "module_role": "stock",
+        "blocks": 460,
+        "packer": "numpy"
+      },
+      "winner23_native": {
+        "module_role": "candidate",
+        "blocks": 23,
+        "packer": "native"
+      }
+    }
+  },
+  "geometry": {
+    "sources": {
+      "round35/geometry/support.py": "4b84e276860bd257acd7f04501f092a37876da158108442313b2349ae2ffe001",
+      "round35/geometry/run.py": "9672e68b42814b5d741a67bec99da86fbb405b1218558a571f0ee9bb6ff921b6",
+      "round35/geometry/analyze.py": "2187b525b7b71dfe6140dd4d678c9573c4ff0234df2704885eb8acf7c49e93d4",
+      "round35/geometry/cpu_check.py": "7484cc270cc8cb17a4568c1684b11fd02c8561c0dfd4b634c0fbf888c19bf962",
+      "round35/geometry/prepare_jobs.py": "6b22400b240b6cf958e870b7024ac51dccd2ba25d380cdcb5d7b8767c7f26741",
+      "round35/geometry/README.md": "9f5cb4430dd7f8698e79502987a096404a69d0e9155fc2246e82f0fe5c84ceed"
+    },
+    "scope": {
+      "stage": "timing",
+      "mode": "stock_native",
+      "cycles": 20,
+      "nonces": 1840,
+      "nonce_base": 5740000,
+      "full_SHA": true,
+      "arms": {
+        "stock460_numpy": {
+          "module_role": "stock",
+          "blocks": 460,
+          "packer": "numpy"
+        },
+        "winner23_native": {
+          "module_role": "candidate",
+          "blocks": 23,
+          "packer": "native"
+        }
+      }
+    },
+    "packing": {
+      "library_sha256": "cb7954dab94fd9b92432920851d3fd6d101dc7c3cb258f1553b8c0c888b34aa6",
+      "build_record_sha256": "63156e407c88d304074461b70c92e2eb90067a1be1f1f3c724bb3a835b9a6c27",
+      "cpu_proof_sha256": "06d30ba72430e18668796f1f64f8bce841dfd2e15129e92aefd4d0ab43c3ee07"
+    },
+    "validations": [
+      {
+        "validation": {
+          "path": "round35/results/geometry-holdout-validate/geometry-validation.json",
+          "sha256": "6f8fde37f9c5bc9debcbc909924315e9935e8784293e2991476d2d1e07e8e272"
+        },
+        "completion": {
+          "path": "round35/results/geometry-holdout-validate/geometry-completed.json",
+          "sha256": "b6b0ee354b480f5c8bde7a149b0aaa409c03e35d17a4605d31f283767625c7dc"
+        },
+        "sanitizers": {
+          "memcheck": {
+            "check": {
+              "path": "round35/results/geometry-holdout-memcheck/geometry-sanitizer.json",
+              "sha256": "527f03522b8d0b7f448cf5d432aed14607307428f0e6ed4168b3f492aa1b768b"
+            },
+            "completion": {
+              "path": "round35/results/geometry-holdout-memcheck/geometry-completed.json",
+              "sha256": "f885e8a2d48eb4af100db9561b2a337f3201acd83e56169540c493f4d1bc040f"
+            },
+            "log": {
+              "path": "round35/results/controller-geometry-validation/geometry-holdout-memcheck.log",
+              "sha256": "911807b410d8d8f96f27ed95a55eb50c79a96b5e1db7297bc8962a818870cf62"
+            }
+          },
+          "synccheck": {
+            "check": {
+              "path": "round35/results/geometry-holdout-synccheck/geometry-sanitizer.json",
+              "sha256": "527f03522b8d0b7f448cf5d432aed14607307428f0e6ed4168b3f492aa1b768b"
+            },
+            "completion": {
+              "path": "round35/results/geometry-holdout-synccheck/geometry-completed.json",
+              "sha256": "c05c1e8d11f427fdfd743283a488e96ac174881bc80062775337fdffc574b0f1"
+            },
+            "log": {
+              "path": "round35/results/controller-geometry-validation/geometry-holdout-synccheck.log",
+              "sha256": "911807b410d8d8f96f27ed95a55eb50c79a96b5e1db7297bc8962a818870cf62"
+            }
+          },
+          "racecheck": {
+            "check": {
+              "path": "round35/results/geometry-holdout-racecheck/geometry-sanitizer.json",
+              "sha256": "527f03522b8d0b7f448cf5d432aed14607307428f0e6ed4168b3f492aa1b768b"
+            },
+            "completion": {
+              "path": "round35/results/geometry-holdout-racecheck/geometry-completed.json",
+              "sha256": "a70da7e59bd063f0b2bb30e00a1d67fe4d966d8249e495f0f35af2fd571054dd"
+            },
+            "log": {
+              "path": "round35/results/controller-geometry-validation/geometry-holdout-racecheck.log",
+              "sha256": "68649bdf5e206af6c5ca28d623713001134ab56ad741776a6c07f4400833e7c2"
+            }
+          }
+        }
+      }
+    ],
+    "controller_receipts": [
+      {
+        "completion": {
+          "path": "round35/results/controller-geometry-validation/completed.json",
+          "sha256": "e077c47ca40c0b14d78e05de6f4f664171a587906d0daf7f289ff19de4db37d6"
+        },
+        "jobs": {
+          "path": "round35/results/controller-geometry-validation/jobs.jsonl",
+          "sha256": "f41480f702b68ac5a56399d9727edd2e41d95bac23fc454d3f61c5da69435011"
+        },
+        "all_exit_codes_zero": true,
+        "exact_job_arguments_verified": true,
+        "plan": {
+          "path": "round35/geometry/plans/initial-all-three/PLAN.json",
+          "sha256": "409582aa045482043e73de26dd7caa37bce055a48d16016e4c6293442de5369f"
+        }
+      }
+    ],
+    "packing_confirmation": [
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/packing-epoch0.json",
+        "sha256": "c01ace3f222a245e82901b2a29a4ef1bcd8fe17b72324107bb547e6ac15df8d6"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/packing-fresh.json",
+        "sha256": "e3e353c7c234fd3d0c0a43485edf3e81ca57db7457efc4a5b88a2b2e6de46545"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/packing-holdout.json",
+        "sha256": "d21d6c8a023152d76a252f7ef6d8776ad77343d0d0787a23a38b7deeae26ea9a"
+      }
+    ],
+    "geometry_confirmation": [
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/paired-epoch0.json",
+        "sha256": "6c70c002ddfbc0094108cb9b8fc65d97dff456a21b510e33e4a243f192270f8c"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/paired-fresh.json",
+        "sha256": "c71ed46f9e22e4f79fa80436df14a1abb29d8b8de04166239de364016e10a410"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/paired-holdout.json",
+        "sha256": "7efa98bd0f35ba892e9f244e5b0f4ae8c806f2b6918223ec58d1d72ad042aaa7"
+      }
+    ],
+    "combination_confirmation": [
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/combo-epoch0.json",
+        "sha256": "2e781c15fc50d7e9958bc1dcaffe36ecc03f145eebeb5c034d32e790f141f108"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/combo-fresh.json",
+        "sha256": "9fc62b2e0818ace3d7caf152329d42e73b0a652696cd7e7ee73e5c7e0dd5959f"
+      },
+      {
+        "path": "round35/geometry/plans/stock-native-all-three/confirmations/combo-holdout.json",
+        "sha256": "fcb08fdebd5a2165ee0f935e0b5244cffeacf4bcc4ab401bccf6738de0395943"
+      }
+    ],
+    "conditional_assembler": {
+      "path": "round35/geometry/assemble_conditional.py",
+      "sha256": "e9f2847603a3e94b15ed7c924b2c14eb1c01f0b025a503540edf0f1645056a20"
+    },
+    "confirmation_evidence": {
+      "packing": [
+        {
+          "analysis": {
+            "path": "round35/results/packing-epoch0-confirm-analysis.json",
+            "sha256": "c01ace3f222a245e82901b2a29a4ef1bcd8fe17b72324107bb547e6ac15df8d6"
+          },
+          "closure": {
+            "path": "round35/results/packing-epoch0-confirm/packing-completed.json",
+            "sha256": "cba22859df74726c2d50c325fe38e880602539456f3388f70a963f46d2f91669"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-candidate-validation/completed.json",
+              "sha256": "ea5a43a6b279805cd73404f6191da75c57f21d668105a21fcf730a6ebd371a86"
+            },
+            "jobs": {
+              "path": "round35/results/controller-candidate-validation/jobs.jsonl",
+              "sha256": "8d497a360a3e7a6883a14dc996cb1c9905654acf1800c9a288dc7df476586cd9"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-extended-validation.json",
+              "sha256": "31c052555495ad820975ee9820d49d7bc3e572952a94764ebbb074de5e165649"
+            },
+            "measured_job": "packing-epoch0-confirm"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/packing-fresh-confirm-analysis.json",
+            "sha256": "e3e353c7c234fd3d0c0a43485edf3e81ca57db7457efc4a5b88a2b2e6de46545"
+          },
+          "closure": {
+            "path": "round35/results/packing-fresh-confirm/packing-completed.json",
+            "sha256": "bff689f9d9bd7c56c681901e4cfce3a890fd704a77b8f8240c60925cf986afe3"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-candidate-validation/completed.json",
+              "sha256": "ea5a43a6b279805cd73404f6191da75c57f21d668105a21fcf730a6ebd371a86"
+            },
+            "jobs": {
+              "path": "round35/results/controller-candidate-validation/jobs.jsonl",
+              "sha256": "8d497a360a3e7a6883a14dc996cb1c9905654acf1800c9a288dc7df476586cd9"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-extended-validation.json",
+              "sha256": "31c052555495ad820975ee9820d49d7bc3e572952a94764ebbb074de5e165649"
+            },
+            "measured_job": "packing-fresh-confirm"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/packing-holdout-confirm-analysis.json",
+            "sha256": "d21d6c8a023152d76a252f7ef6d8776ad77343d0d0787a23a38b7deeae26ea9a"
+          },
+          "closure": {
+            "path": "round35/results/packing-holdout-confirm/packing-completed.json",
+            "sha256": "5d2fa2adbcd177c23d2ce52fdcad7a92412eb05bb28b637a35bd55303c20ee58"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-primary-performance/completed.json",
+              "sha256": "490891eba9913a41f2a22d1d6f1b4e52751d011de3caa39429ba28e5e1a056e7"
+            },
+            "jobs": {
+              "path": "round35/results/controller-primary-performance/jobs.jsonl",
+              "sha256": "b7a7386d26bba38e782163c2c50f2c306c1eff39f3e258d12607b7c4b203cce6"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-primary-performance.json",
+              "sha256": "9566cb4396c2446312f452ee33a0a95be1abad9b003ec7f5729c9645f2d0fb0f"
+            },
+            "measured_job": "packing-holdout-confirm"
+          }
+        }
+      ],
+      "paired": [
+        {
+          "analysis": {
+            "path": "round35/results/geometry-epoch0-paired-analysis.json",
+            "sha256": "6c70c002ddfbc0094108cb9b8fc65d97dff456a21b510e33e4a243f192270f8c"
+          },
+          "closure": {
+            "path": "round35/results/geometry-epoch0-paired/geometry-completed.json",
+            "sha256": "74e38ffa8150110aaf9c9f4820fa7b2c8a2971791943a44d729a14c845891c93"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-paired/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-paired/jobs.jsonl",
+              "sha256": "d424475f863056518010ffbe930cdbb44ffa4c49bf1e471fad779523b1e46336"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-paired.json",
+              "sha256": "1d4db39e70ef5ff518c031dcea8a299b2bd6592cbd5bae566857c6fda801e077"
+            },
+            "measured_job": "geometry-epoch0-paired"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/geometry-fresh-paired-analysis.json",
+            "sha256": "c71ed46f9e22e4f79fa80436df14a1abb29d8b8de04166239de364016e10a410"
+          },
+          "closure": {
+            "path": "round35/results/geometry-fresh-paired/geometry-completed.json",
+            "sha256": "9a9913884d957b912a84952c2af4ea9838595f67ef7703c7cc03927eacf22ce6"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-paired/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-paired/jobs.jsonl",
+              "sha256": "d424475f863056518010ffbe930cdbb44ffa4c49bf1e471fad779523b1e46336"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-paired.json",
+              "sha256": "1d4db39e70ef5ff518c031dcea8a299b2bd6592cbd5bae566857c6fda801e077"
+            },
+            "measured_job": "geometry-fresh-paired"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/geometry-holdout-paired-analysis.json",
+            "sha256": "7efa98bd0f35ba892e9f244e5b0f4ae8c806f2b6918223ec58d1d72ad042aaa7"
+          },
+          "closure": {
+            "path": "round35/results/geometry-holdout-paired/geometry-completed.json",
+            "sha256": "98d6a782f62d89811ee47ab130c610ef648eec4b4a1b3c159b99164b2bd346fa"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-paired/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-paired/jobs.jsonl",
+              "sha256": "d424475f863056518010ffbe930cdbb44ffa4c49bf1e471fad779523b1e46336"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-paired.json",
+              "sha256": "1d4db39e70ef5ff518c031dcea8a299b2bd6592cbd5bae566857c6fda801e077"
+            },
+            "measured_job": "geometry-holdout-paired"
+          }
+        }
+      ],
+      "combo": [
+        {
+          "analysis": {
+            "path": "round35/results/geometry-epoch0-combo-analysis.json",
+            "sha256": "2e781c15fc50d7e9958bc1dcaffe36ecc03f145eebeb5c034d32e790f141f108"
+          },
+          "closure": {
+            "path": "round35/results/geometry-epoch0-combo/geometry-completed.json",
+            "sha256": "1fd9fe2cc0df06a6abeee170fe8892aa049158e7e61a4434dd0062cfc3e7a750"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-combo/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-combo/jobs.jsonl",
+              "sha256": "93cb3b8da612b20909d57f0db48df732888468315cac54e6102a2b3a7b745cbd"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-combo.json",
+              "sha256": "966873b62befdaacdc657756436dc47e76ad2291acbb6eb478030b0f185ee4e5"
+            },
+            "measured_job": "geometry-epoch0-combo"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/geometry-fresh-combo-analysis.json",
+            "sha256": "9fc62b2e0818ace3d7caf152329d42e73b0a652696cd7e7ee73e5c7e0dd5959f"
+          },
+          "closure": {
+            "path": "round35/results/geometry-fresh-combo/geometry-completed.json",
+            "sha256": "e61c7ce5cbefb15a707042cbe46057896f23177f31467fe8ea5879ace9c4bdf8"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-combo/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-combo/jobs.jsonl",
+              "sha256": "93cb3b8da612b20909d57f0db48df732888468315cac54e6102a2b3a7b745cbd"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-combo.json",
+              "sha256": "966873b62befdaacdc657756436dc47e76ad2291acbb6eb478030b0f185ee4e5"
+            },
+            "measured_job": "geometry-fresh-combo"
+          }
+        },
+        {
+          "analysis": {
+            "path": "round35/results/geometry-holdout-combo-analysis.json",
+            "sha256": "fcb08fdebd5a2165ee0f935e0b5244cffeacf4bcc4ab401bccf6738de0395943"
+          },
+          "closure": {
+            "path": "round35/results/geometry-holdout-combo/geometry-completed.json",
+            "sha256": "40409c0c9497bc6adce850d4d41f62330e3656784be965dfe72acb47beb2b20c"
+          },
+          "controller": {
+            "completion": {
+              "path": "round35/results/controller-geometry-combo/completed.json",
+              "sha256": "51ec7084f4b464e0fcff38e2f887547e9666d88b77b729b8a527438bafa70226"
+            },
+            "jobs": {
+              "path": "round35/results/controller-geometry-combo/jobs.jsonl",
+              "sha256": "93cb3b8da612b20909d57f0db48df732888468315cac54e6102a2b3a7b745cbd"
+            },
+            "all_exit_codes_zero": true,
+            "exact_job_arguments_verified": true,
+            "plan": {
+              "path": "round35/control/jobs-geometry-combo.json",
+              "sha256": "966873b62befdaacdc657756436dc47e76ad2291acbb6eb478030b0f185ee4e5"
+            },
+            "measured_job": "geometry-holdout-combo"
+          }
+        }
+      ]
+    }
+  }
+}

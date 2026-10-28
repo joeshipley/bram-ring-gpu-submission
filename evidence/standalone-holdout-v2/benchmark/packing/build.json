@@ -1,0 +1,27 @@
+{
+  "builder_sha256": "64c054688b1e4131791b297e66993bf63c8c097967d75fed07110bb66d2c4eae",
+  "command": [
+    "/usr/bin/cc",
+    "-std=c11",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fPIC",
+    "-shared",
+    "/root/bram35-standalone-v2/bram-round35/packing/pack.c",
+    "-o",
+    "/root/bram35-standalone-v2/bram-round35/build/native-pack/libbram_pack.so"
+  ],
+  "compiler": "/usr/bin/x86_64-linux-gnu-gcc-13",
+  "compiler_version": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "library": "libbram_pack.so",
+  "library_sha256": "cb7954dab94fd9b92432920851d3fd6d101dc7c3cb258f1553b8c0c888b34aa6",
+  "machine": "x86_64",
+  "no_march_native": true,
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "pointer_bits": 64,
+  "source": "/root/bram35-standalone-v2/bram-round35/packing/pack.c",
+  "source_sha256": "fd9a9d84b75ceae9a1db8aedf22d901120d3f685908d444574c75b3b1ea871c9",
+  "status": "built_not_benchmarked"
+}

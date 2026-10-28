@@ -1,0 +1,82 @@
+{
+  "status": "passed_CPU_only_no_GPU",
+  "package": "/root/bram35-standalone-v2/bram-round35",
+  "archive_sha256": "f4337743330c71806b65b2b83dd59bec51952ee2c6f8431436a7970c59db0a57",
+  "manifest_sha256": "21bbde968f178647facc25ab31c849fe0e8e1bc56631b7f3097dc20d10683594",
+  "files": {
+    "LICENSE": "1891665e46abb61980d3a456df8a17f341f3bc913f55c34dec62b03abddc98ba",
+    "MANIFEST.json": "21bbde968f178647facc25ab31c849fe0e8e1bc56631b7f3097dc20d10683594",
+    "NOTICE.txt": "2b516a71b5b1b48e5be2521c8503eb9b835aa5b287564d17762fb65077ef05fa",
+    "PROVENANCE.json": "6869f1087bf42a061544d6bf58fb3c0be75ec2fb75f235b2a8bdf12ba09a2459",
+    "READINESS.json": "f6c7364df7e3a35c9172ee3744cb7924a0a13c799ea3edbb52ba43c256a95630",
+    "README.md": "bf23e042cbe2967786b1800c5f98b1c135a385156b95a9e42204a748c6dda98f",
+    "bench.py": "8ea42f067c0db5876781b15b05a54aa624a44411e3fa34f45b9224fa32f03b56",
+    "capture_actual.py": "a76dec6d2eeaba8ab86d421383c7cccd7676fd469000ea210aaab9feac4e7f2c",
+    "check_result.py": "204fa588e1f168a98256c7d40947eb34257b5dc9691f3fa812229c9b3175d433",
+    "cpu_check.py": "18595585c146c8938b6cafd30be84a8cf7fb90ba3b61d9cdc4caa4d4b1b823b8",
+    "generate.py": "20f78b63ff10f7b4fee681355190e91eaaeb527a733d2701d928eb0ac6534dab",
+    "metadata_capture.py": "f1566229c878b623372e876c742b4f288d20c987297d518237660abf9ae5286f",
+    "package_runtime.py": "5127062c9ae21ae80f3b03ea66f1988cefd76b12f6601edc829f97f63a2dc556",
+    "requirements.txt": "85e7fd04b2766881279102876330338e4dbec4b7562392a9fb8f7a466a3260a9",
+    "spec.py": "5596327c5fc89b4d87eaf64df0b25e8430a9b25247ebae4c3e1037c19cd2f292",
+    "vectors.txt": "d406e2319f21e641dc77fcf79693c88062cc312cd1d75f0c286fa4ba85cf88f1",
+    "gpu/candidate.py": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+    "gpu/mine.py": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+    "host/check_vectors.py": "7dae6059cd85feb4de5c949e6a58501a5269aa085cd78e1523c6b9b7c7a80e61",
+    "packing/__init__.py": "0d5ec800373e2dfd191e3524975e959dcfb4ca77ae63a51fa556bdc3540896a0",
+    "packing/adapter.py": "37848cc534536442dc04e198e6c7fbdf20efdfd9874e9930cc223e0b82b5c579",
+    "packing/build.py": "64c054688b1e4131791b297e66993bf63c8c097967d75fed07110bb66d2c4eae",
+    "packing/cpu_check.py": "4ebb8406c5abcb9e58edf8e91f7521e68bb7330c0d991602843cf09f9eeb3561",
+    "packing/pack.c": "fd9a9d84b75ceae9a1db8aedf22d901120d3f685908d444574c75b3b1ea871c9",
+    "packing/sanitize.c": "21334339d129f9689734bb6e5a925be0a3fe65aa6f34f1b4d4a70f1ce3c5eda7",
+    "packing/vectors/epoch0.txt": "d406e2319f21e641dc77fcf79693c88062cc312cd1d75f0c286fa4ba85cf88f1",
+    "packing/vectors/round30.txt": "1716ef39dfd72cc8e023fb6628ec6834adedfe5e65982cd61c5f5f8299ca52e8",
+    "packing/vectors/round34.txt": "b1734f29e280b6ae4b0e2d4c9c8dfeab31d2581a6520a99ce549ab4f64597958",
+    "build/native-pack/libbram_pack.so": "cb7954dab94fd9b92432920851d3fd6d101dc7c3cb258f1553b8c0c888b34aa6",
+    "build/native-pack/build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build/native-pack/build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build/native-pack/build.json": "0c3d0c2f560876b07759051ca74011ba7410230f228ade0fe46a41d07986d81d",
+    "build/native-pack/cpu-proof.json": "6ea721757b41afba96ecfb253daf48c83e6c6fb34d72066daaec0edc34179d6f"
+  },
+  "steps": [
+    {
+      "argv": [
+        "/root/bram35/.venv/bin/python",
+        "-B",
+        "bench.py",
+        "--check-package"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/root/bram35/.venv/bin/python",
+        "-B",
+        "cpu_check.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/root/bram35/.venv/bin/python",
+        "-B",
+        "packing/build.py",
+        "--output",
+        "build/native-pack"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/root/bram35/.venv/bin/python",
+        "-B",
+        "packing/cpu_check.py",
+        "--build",
+        "build/native-pack",
+        "--output",
+        "build/native-pack/cpu-proof.json"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

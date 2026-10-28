@@ -1,0 +1,10 @@
+Upstream BRAM-ring code is Copyright (c) 2026 Peter Rizun, under the MIT License.
+The complete original copyright and permission notice is included in LICENSE.
+
+gpu/mine.py, spec.py, generate.py, vectors.txt and host/check_vectors.py are
+unchanged upstream files from commit abe3f552fef39b1d7fc52327b2ca5e97134b57b3.
+
+gpu/candidate.py is a derived optimization, preserving the complete measured
+RULE64 source. Benchmark/capture/metadata tools are derived from the local
+MIT-licensed validation workflow. PROVENANCE.json records each source identity.
+No endorsement, prize award or organizer acceptance is asserted.

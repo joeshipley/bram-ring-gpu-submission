@@ -1,0 +1,1 @@
+PASS: 8/8 vectors bit-exact on every column (digest, fold, state)

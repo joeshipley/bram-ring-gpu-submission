@@ -1,0 +1,1 @@
+{"status": "passed_cpu_only_not_gpu_validated", "golden_vectors": 24, "contract_rejections": 8, "output": "build/native-pack/cpu-proof.json"}

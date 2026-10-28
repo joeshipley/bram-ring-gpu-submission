@@ -1,0 +1,18 @@
+{
+  "kind": "native_cpu_pack",
+  "library": "packing/libbram_pack.so",
+  "library_sha256": "cb7954dab94fd9b92432920851d3fd6d101dc7c3cb258f1553b8c0c888b34aa6",
+  "build_record_sha256": "0c3d0c2f560876b07759051ca74011ba7410230f228ade0fe46a41d07986d81d",
+  "cpu_proof_sha256": "6ea721757b41afba96ecfb253daf48c83e6c6fb34d72066daaec0edc34179d6f",
+  "sources": {
+    "adapter.py": "37848cc534536442dc04e198e6c7fbdf20efdfd9874e9930cc223e0b82b5c579",
+    "build.py": "64c054688b1e4131791b297e66993bf63c8c097967d75fed07110bb66d2c4eae",
+    "cpu_check.py": "4ebb8406c5abcb9e58edf8e91f7521e68bb7330c0d991602843cf09f9eeb3561",
+    "pack.c": "fd9a9d84b75ceae9a1db8aedf22d901120d3f685908d444574c75b3b1ea871c9",
+    "sanitize.c": "21334339d129f9689734bb6e5a925be0a3fe65aa6f34f1b4d4a70f1ce3c5eda7"
+  },
+  "machine": "x86_64",
+  "pointer_bits": 64,
+  "mining_source_changed": false,
+  "every_nonce_SHA_retained": true
+}

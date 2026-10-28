@@ -1,0 +1,15 @@
+[
+  {
+    "name": "standalone-epoch0-full-v2",
+    "argv": [
+      ".venv/bin/python",
+      "-B",
+      "submission-prep/round35/execute_standalone.py",
+      "--stage",
+      "epoch0-full",
+      "--output",
+      "round35/results/standalone-epoch0-full-v2"
+    ],
+    "timeout": 1200
+  }
+]

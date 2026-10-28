@@ -1,0 +1,225 @@
+{
+  "cache_entries": [
+    {
+      "bytes": 18271,
+      "elf_magic": true,
+      "file": "350b425c17c2737b3ea8ddac213fb4b75a0619de.cubin",
+      "matching_captures": [
+        1
+      ],
+      "sha1_prefix_valid": true,
+      "sha256": "24943810fd3eec93628697037b2c3a702e98639c32b47a13242c74276457be49"
+    },
+    {
+      "bytes": 26591,
+      "elf_magic": true,
+      "file": "d224f671a36bb095fc5f4b67ef58b8f331e59242.cubin",
+      "matching_captures": [
+        0
+      ],
+      "sha1_prefix_valid": true,
+      "sha256": "77f1a201a56e645ad4a830ba4efb80aa544f9f1d30e00b90ec88fe7b01a49ed4"
+    }
+  ],
+  "cache_repaired": false,
+  "capture_hook_restored_before_timing": true,
+  "captures": [
+    {
+      "compile_return_object_unchanged": true,
+      "cupy_returned": {
+        "bytes": 26591,
+        "elf_magic": true,
+        "sha256": "77f1a201a56e645ad4a830ba4efb80aa544f9f1d30e00b90ec88fe7b01a49ed4"
+      },
+      "index": 0,
+      "matching_valid_cache_entries": [
+        "d224f671a36bb095fc5f4b67ef58b8f331e59242.cubin"
+      ],
+      "method": "cubin",
+      "nvrtc_complete": {
+        "bytes": 26592,
+        "elf_magic": true,
+        "sha256": "a4e8c620e27a129bc3d0ed3e5931e8577c7329a349f06ba3fd3c02e140409d24"
+      },
+      "nvrtc_library": {
+        "already_mapped_only": true,
+        "path": "/usr/local/cuda-12.8/targets/x86_64-linux/lib/libnvrtc.so.12.8.93",
+        "sha256": "2bb82d1a34b9fefa46aca357299aed66763d4d6613d015d5a591224c00fa7e5a",
+        "version": [
+          12,
+          8
+        ]
+      },
+      "options": [
+        "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/cub",
+        "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/thrust",
+        "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/libcudacxx",
+        "-std=c++14",
+        "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include",
+        "-I/usr/local/cuda/include",
+        "-ftz=true",
+        "-arch=sm_86",
+        "--device-as-default-execution-space"
+      ],
+      "program_name": "/tmp/tmpc1m8srgb/d224f671a36bb095fc5f4b67ef58b8f331e59242.cubin.cu",
+      "relationship": {
+        "complete_final_byte_hex": "00",
+        "executable_sections": {
+          "all_identical": true,
+          "sections": [
+            {
+              "bytes": 23552,
+              "complete_sha256": "477fe79b6a2db3ce249264ea480c8da45cff3737a5f2bc050722b1d35a66c0cb",
+              "identical": true,
+              "name": ".text.ring_mine",
+              "offset": 1920,
+              "returned_sha256": "477fe79b6a2db3ce249264ea480c8da45cff3737a5f2bc050722b1d35a66c0cb"
+            }
+          ],
+          "target_section_present": true
+        },
+        "identical": false,
+        "returned_is_complete_minus_final_byte": true,
+        "size_difference": 1
+      },
+      "source_sha256": "51db3741256f2da3c9fc7ed0adca8e48794393c277d511520d34f0ecbf9492a7",
+      "status": "ok"
+    },
+    {
+      "compile_return_object_unchanged": true,
+      "cupy_returned": {
+        "bytes": 18271,
+        "elf_magic": true,
+        "sha256": "24943810fd3eec93628697037b2c3a702e98639c32b47a13242c74276457be49"
+      },
+      "index": 1,
+      "matching_valid_cache_entries": [
+        "350b425c17c2737b3ea8ddac213fb4b75a0619de.cubin"
+      ],
+      "method": "cubin",
+      "nvrtc_complete": {
+        "bytes": 18272,
+        "elf_magic": true,
+        "sha256": "96c9aa335669ac40590c22d195a9e440f791358332b9d25f551adc33a73c8ccc"
+      },
+      "nvrtc_library": {
+        "already_mapped_only": true,
+        "path": "/usr/local/cuda-12.8/targets/x86_64-linux/lib/libnvrtc.so.12.8.93",
+        "sha256": "2bb82d1a34b9fefa46aca357299aed66763d4d6613d015d5a591224c00fa7e5a",
+        "version": [
+          12,
+          8
+        ]
+      },
+      "options": [
+        "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/cub",
+        "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/thrust",
+        "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include/cupy/_cccl/libcudacxx",
+        "-std=c++14",
+        "-I/root/bram35/.venv/lib/python3.12/site-packages/cupy/_core/include",
+        "-I/usr/local/cuda/include",
+        "-ftz=true",
+        "-arch=sm_86",
+        "--device-as-default-execution-space"
+      ],
+      "program_name": "/tmp/tmpj9337nw9/350b425c17c2737b3ea8ddac213fb4b75a0619de.cubin.cu",
+      "relationship": {
+        "complete_final_byte_hex": "00",
+        "executable_sections": {
+          "all_identical": true,
+          "sections": [
+            {
+              "bytes": 15360,
+              "complete_sha256": "8e415e001ddbd5a14d562bc1d6133d9e75bc10eab1c1d6f552d146b7332e4ae4",
+              "identical": true,
+              "name": ".text.ring_mine",
+              "offset": 1792,
+              "returned_sha256": "8e415e001ddbd5a14d562bc1d6133d9e75bc10eab1c1d6f552d146b7332e4ae4"
+            }
+          ],
+          "target_section_present": true
+        },
+        "identical": false,
+        "returned_is_complete_minus_final_byte": true,
+        "size_difference": 1
+      },
+      "source_sha256": "8c44f9931cabe9125e4ffb1a88f8732ce59cbbe84419de243200927fae45d374",
+      "status": "ok"
+    }
+  ],
+  "compile_options_changed": false,
+  "device": {
+    "compute_capability": "86",
+    "id": 0
+  },
+  "environment": {
+    "CUPY_CACHE_DIR": "/root/bram35/round35/results/geometry-epoch0-stock_native/compiled/cache",
+    "CUPY_CACHE_SAVE_CUDA_SOURCE": "1",
+    "CUPY_CUDA_PER_THREAD_DEFAULT_STREAM": "0"
+  },
+  "hardware_counters_requested": false,
+  "modules": {
+    "candidate": {
+      "MINE_K": 1,
+      "candidate_source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+      "cupy_kernel_attributes": {
+        "binary_version": 86,
+        "cache_mode_ca": 0,
+        "const_size_bytes": 0,
+        "local_size_bytes": 0,
+        "max_dynamic_shared_size_bytes": 41980,
+        "max_threads_per_block": 1024,
+        "num_regs": 56,
+        "preferred_shared_memory_carveout": -1,
+        "ptx_version": 86,
+        "shared_size_bytes": 7172
+      },
+      "defs_body_sha256": "8c44f9931cabe9125e4ffb1a88f8732ce59cbbe84419de243200927fae45d374",
+      "epoch": "epoch0",
+      "matching_captures": [
+        {
+          "index": 1,
+          "source_relationship": "identical"
+        }
+      ],
+      "variant": "rule_u64"
+    },
+    "stock": {
+      "MINE_K": 1,
+      "candidate_source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+      "cupy_kernel_attributes": {
+        "binary_version": 86,
+        "cache_mode_ca": 0,
+        "const_size_bytes": 0,
+        "local_size_bytes": 0,
+        "max_dynamic_shared_size_bytes": 41980,
+        "max_threads_per_block": 768,
+        "num_regs": 40,
+        "preferred_shared_memory_carveout": -1,
+        "ptx_version": 86,
+        "shared_size_bytes": 7172
+      },
+      "defs_body_sha256": "51db3741256f2da3c9fc7ed0adca8e48794393c277d511520d34f0ecbf9492a7",
+      "epoch": "epoch0",
+      "matching_captures": [
+        {
+          "index": 0,
+          "source_relationship": "identical"
+        }
+      ],
+      "variant": "baseline"
+    }
+  },
+  "purpose": "Observe compilation of the module objects passed to the benchmark",
+  "status": "ok",
+  "timing_completed": true,
+  "versions": {
+    "cuda_driver": 13000,
+    "cuda_runtime": 12090,
+    "cupy": "14.2.0",
+    "nvrtc": [
+      12,
+      8
+    ]
+  }
+}

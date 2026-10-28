@@ -1,0 +1,59 @@
+{
+  "argv": [
+    "submission-prep/round35/execute_standalone.py",
+    "--stage",
+    "epoch0-full",
+    "--output",
+    "round35/results/standalone-epoch0-full-v2"
+  ],
+  "concurrent_transfers_allowed": false,
+  "plan": {
+    "archive": "submission-prep/round35/dist/bram-round35-v2.tar.gz",
+    "archive_sha256": "f4337743330c71806b65b2b83dd59bec51952ee2c6f8431436a7970c59db0a57",
+    "build_files": {
+      "build/native-pack/build.json": "0c3d0c2f560876b07759051ca74011ba7410230f228ade0fe46a41d07986d81d",
+      "build/native-pack/cpu-proof.json": "6ea721757b41afba96ecfb253daf48c83e6c6fb34d72066daaec0edc34179d6f",
+      "build/native-pack/libbram_pack.so": "cb7954dab94fd9b92432920851d3fd6d101dc7c3cb258f1553b8c0c888b34aa6"
+    },
+    "candidate_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+    "cpu_prepared_path": "round35/results/standalone-cpu-v2/prepared.json",
+    "cpu_prepared_sha256": "577721a263085ac483537e26d616a76861a021eeabd966c8b8bca91615d621e3",
+    "holdout_seed": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+    "holdout_seed_file": "round35/holdout/seed.txt",
+    "holdout_vectors": "round35/holdout/vectors.txt",
+    "holdout_vectors_sha256": "c7abbd8ac0286022c365b9b90882238e94550c42bca1d6e8cde3c7bbf2f9447e",
+    "lock": "/tmp/bram-round30-gpu.lock",
+    "manifest_sha256": "21bbde968f178647facc25ab31c849fe0e8e1bc56631b7f3097dc20d10683594",
+    "mining_source_changes": false,
+    "orchestration": "Run holdout first and require its closed passing receipt. Run full only after all other GPU jobs and transfers finish; the lock prevents GPU-job overlap, not unrelated network traffic. Do not transfer data during the full stage.",
+    "package": "/root/bram35-standalone-v2/bram-round35",
+    "preparation_sha256": "029c5795f3efecb1ee55a7cb99e1f6ea5d248174d98ce9783474c99b821cb1b1",
+    "schema": "round35_standalone_execution_v1",
+    "selected_components": {
+      "candidate_blocks": 23,
+      "candidate_packer": "native",
+      "kernel": "unchanged RULE64",
+      "stock_blocks": 460,
+      "stock_packer": "numpy"
+    },
+    "stages": {
+      "epoch0-full": {
+        "benchmark_timeout_seconds": 900,
+        "concurrent_transfers_allowed": false,
+        "output": "round35/results/standalone-epoch0-full-v2",
+        "scored": true
+      },
+      "holdout-verify": {
+        "benchmark_timeout_seconds": 600,
+        "concurrent_transfers_allowed": true,
+        "output": "round35/results/standalone-holdout-v2",
+        "scored": false
+      }
+    },
+    "stock_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a"
+  },
+  "plan_sha256": "8e1217ba5b7ab0e7e9a7f3bdf4c9cfd5127758e32529081d7441e6789c747eca",
+  "scored_stage": true,
+  "stage": "epoch0-full",
+  "wrapper_sha256": "352fb045a16b86f089d0f6328b2115e1b829996042c3f4d5e7232f6b1ca764e4"
+}

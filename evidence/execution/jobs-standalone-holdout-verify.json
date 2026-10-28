@@ -1,0 +1,15 @@
+[
+  {
+    "name": "standalone-holdout-verify-v2",
+    "argv": [
+      ".venv/bin/python",
+      "-B",
+      "submission-prep/round35/execute_standalone.py",
+      "--stage",
+      "holdout-verify",
+      "--output",
+      "round35/results/standalone-holdout-v2"
+    ],
+    "timeout": 900
+  }
+]

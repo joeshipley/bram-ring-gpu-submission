@@ -1,0 +1,29 @@
+{
+  "status": "passed_standalone_package_result_check",
+  "epoch": "epoch0",
+  "blocks": {
+    "stock": 460,
+    "candidate": 23
+  },
+  "packers": {
+    "stock": "numpy",
+    "candidate": "native"
+  },
+  "pairs": 20,
+  "nonces_per_sample": 1840,
+  "measurements_retained": 40,
+  "no_samples_dropped": true,
+  "mean_rate_gain_percent": 13.627261231447442,
+  "total_elapsed_gain_percent": 13.62723569051174,
+  "paired_wins": 20,
+  "package": {
+    "files_verified": 27,
+    "manifest_sha256": "21bbde968f178647facc25ab31c849fe0e8e1bc56631b7f3097dc20d10683594"
+  },
+  "candidate_source_sha256": "719ce70319461cbc8f36d2bf57af38656b618ea80c9e8b08008b2d808cc34ea7",
+  "baseline_source_sha256": "a17658c235d36d1fbce019fb3729eb8dba71febb7498217047da42717202e42a",
+  "summary_sha256": "5731d465669ce3f7b2c4cae67411de05890a4181f58f507c3562a1a8ef816bd4",
+  "confidence_interval": null,
+  "organizer_validation": false,
+  "scope": "Bounded result identity, vectors, metadata, raw pairs and arithmetic; no full-bank or sanitizer replay."
+}

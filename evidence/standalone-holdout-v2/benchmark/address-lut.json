@@ -1,0 +1,38 @@
+{
+  "diagnostics": {
+    "kind": "address_variable_chunk_value_lane_u16",
+    "chunk_widths": [
+      7,
+      7,
+      6
+    ],
+    "chunk_bit_offsets": [
+      0,
+      7,
+      14
+    ],
+    "chunk_row_offsets": [
+      0,
+      128,
+      256
+    ],
+    "rows": 320,
+    "lanes": 768,
+    "prefix_bytes": 6912,
+    "prefix_sha256": "345f97cd5867e6f32ebcb4f4543c459218e7e41b44cf13bee7f1145a994377b2",
+    "table_words": 245760,
+    "table_sha256": "f5e109f47fb0db2de7b667316274584beb8e285533d9924f337c60ff9498c72c",
+    "epoch": "bram-round35-heldout-f1b6a5c872cc2600411e08d2",
+    "nonce_independent": true,
+    "outside_timing": true
+  },
+  "device_total_bytes": 498432,
+  "prefix_sha256": "345f97cd5867e6f32ebcb4f4543c459218e7e41b44cf13bee7f1145a994377b2",
+  "table_sha256": "f5e109f47fb0db2de7b667316274584beb8e285533d9924f337c60ff9498c72c",
+  "suffix_sha256": "f5e109f47fb0db2de7b667316274584beb8e285533d9924f337c60ff9498c72c",
+  "payload_sha256": "440ee845d8dcf4643f575f49d58a76b475177baa6c8c1d2a53079c099e1dff30",
+  "table_dtype": "uint16",
+  "prefix_equal": true,
+  "suffix_equal": true,
+  "outside_timing": true
+}
